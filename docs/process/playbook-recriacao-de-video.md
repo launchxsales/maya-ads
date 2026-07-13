@@ -193,6 +193,7 @@ Para cada cena, registrar:
 
 - Extrair uma referência do “antes” e uma do “depois”; regenerar/limpar ambas com a mesma riqueza de detalhes e sem marca-d’água quando autorizado.
 - Declarar microdetalhes obrigatórios: celular na mão, roupa, quadro, acessórios, objeto de fundo, pose e crop.
+- Medir no original quanto tempo cada estado permanece em tela. Quando o anúncio apresenta antes/depois de forma simétrica, manter **o mesmo tempo útil para a foto do antes e para a foto do depois**; a transição ocupa uma duração separada e curta. Nunca encurtar o “antes” só para antecipar a troca.
 - Planejar a troca e qualquer pan/zoom no PalmierPro. Não gerar um avatar falante nem vídeo se o original é uma montagem de fotos.
 - Manter a fala original como voice-over.
 
@@ -274,6 +275,10 @@ Procedimento recomendado:
 Não afirmar que um arquivo está disponível sem testar a URL. Um `404` deve ser tratado como bloqueio real, não como detalhe administrativo.
 
 ## Ciclo obrigatório de execução: uma cena por vez
+
+### Monitor obrigatório de gerações assíncronas
+
+Ao iniciar qualquer geração externa (HeyGen ou equivalente), o Codex deve criar imediatamente um monitor automático vinculado à tarefa. O monitor consulta o status até a conclusão, recupera o arquivo, compara com o take original, insere/substitui o resultado no PalmierPro, revisa as fronteiras vizinhas e só então informa a conclusão. **Nunca encerrar uma entrega em “geração iniciada”, “aguardando” ou “arquivo pronto”**: a entrega só termina com a cena montada e revisada na timeline.
 
 Depois de aprovado o plano, o Codex não deve disparar a produção de todas as cenas de uma vez.
 
@@ -390,6 +395,7 @@ Esta regra evita dois erros recorrentes: cortar uma boa tomada anterior para enc
 - aplicar pan/zoom de poucos pontos percentuais;
 - usar keyframes suaves;
 - manter o áudio/voice-over original.
+- em montagens antes/depois simétricas, distribuir a duração útil igualmente entre as duas fotos e reservar apenas alguns frames para a transição; conferir os frames e as durações antes de considerar a cena pronta;
 - calcular a duração de cada foto a partir do take e do áudio original; a última foto deve terminar exatamente na fronteira da próxima cena, não permanecer em tela por conveniência;
 - quando houver dissolve, validar o primeiro, cada quadro intermediário e o último quadro da transição; se a timeline não oferecer sobreposição de faixas, usar um microtake técnico de transição documentado, sem substituir as fotos por avatar ou vídeo IA.
 
