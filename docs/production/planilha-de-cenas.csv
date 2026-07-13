@@ -1,0 +1,22 @@
+scene_id,start_seconds,end_seconds,cut_status,take_structure,visual_type,current_timeline_method,reference_status,plan_status,human_approval,status,notes
+scene-01,0.000000,4.300000,approved,take-01,spoken-video,lipsync-plus-timeline-zoom,legacy-approved,approved,approved,ready,Timeline approved by human; preserve current version.
+scene-02,4.300000,7.200000,approved,take-01-before|take-02-after,before-after-photos,timeline-photo-montage,legacy-approved,approved,approved,ready,Timeline approved by human; preserve current version.
+scene-03,7.200000,8.900000,approved,take-01,walking-video,generated-video,legacy-approved,approved,approved,ready,Timeline approved by human; preserve current version.
+scene-04,8.900000,12.933333,approved,take-01-before|take-02-after,before-after-photos,timeline-photo-montage,legacy-approved,approved,approved,ready,Timeline approved by human; preserve current version.
+scene-05,12.933333,14.266667,reviewed,take-01,spoken-video,lipsync,clean-start-middle-end-ready,approved,approved,candidate-review,New lipsync candidate created with original audio; compare in PalmierPro before replacing the legacy timeline clip.
+scene-06-before-after,14.266667,17.533333,reviewed,take-01-before|take-02-after,before-after-photos,timeline-photo-animation,needs-canonical-clean-pair,pending,pending,rework,Old scenes 06 and 07 are now one logical scene.
+scene-08,17.533333,18.633333,reviewed,take-01,photo,timeline-photo-animation,needs-one-clean-photo,pending,pending,rework,Slow PalmierPro zoom only.
+scene-09,18.633333,21.866667,reviewed,take-01,spoken-video,lipsync,needs-clean-start-middle-end,pending,pending,rework,Stray frames removed; validate cup action and camera.
+scene-10,21.866667,26.233333,reviewed,take-01-before|take-02-after,before-after-photos,timeline-photo-animation,needs-canonical-clean-pair,pending,pending,rework,After take had leaked into old scene 11.
+scene-11-before-after,26.233333,29.266667,reviewed,take-01-before|take-02-after,before-after-photos,timeline-photo-animation,needs-canonical-clean-pair,pending,pending,rework,Old scenes 11 and 12 are one logical before-after scene.
+scene-13,29.266667,32.966667,reviewed,take-01-bottle|take-02-speaking,mixed-two-people,timeline-photo-animation,needs-clean-per-take,pending,pending,rework,Do not merge people or use one avatar.
+scene-14,32.966667,35.366667,reviewed,take-01,spoken-video,lipsync,needs-clean-start-middle-end,pending,pending,rework,Stray boundary frames removed.
+scene-15,35.366667,36.866667,reviewed,take-01,spoken-video,lipsync,needs-clean-start-middle-end,pending,pending,rework,Stray final frame removed.
+scene-16,36.866667,38.733333,reviewed,take-01-speaking,spoken-video,lipsync,needs-open-clean-start-middle-end,pending,pending,rework,Photo begins at 38.733333 and belongs to scene 17.
+scene-17,38.733333,41.566667,reviewed,take-01-before|take-02-after,before-after-photos,timeline-photo-animation,needs-canonical-clean-pair,pending,pending,rework,Separated at the physical transition; ends before scene 18.
+scene-18,41.566667,43.033333,approved,take-01,spoken-video,lipsync,needs-clean-start-middle-end,pending,approved,keep,Cut approved by human.
+scene-19-before-after,43.033333,46.566667,reviewed,take-01-before|take-02-after,before-after-photos,timeline-photo-animation,needs-canonical-clean-pair,pending,pending,rework,Before and after are now isolated from app UI.
+scene-20,46.566667,49.333333,reviewed,take-01-app,app-ui,timeline-ui-animation,needs-clean-ui-states,pending,pending,rework,After image removed; ignore final speaking face and use separate voice-over over scene 21.
+scene-21,50.066667,53.400000,approved,take-01,lifestyle-video,timeline-photo-placeholder,needs-clean-start-middle-end,pending,approved,blocked,Cut approved; needs real walking motion when generation is available.
+scene-22,53.400000,56.100000,approved,take-01,lifestyle-video,timeline-photo-placeholder,needs-clean-start-middle-end,pending,approved,blocked,Cut approved; needs real drinking action when generation is available.
+scene-23,56.100000,59.179000,approved,take-01,cta,timeline-graphic,needs-approved-cta-art,pending,approved,review,Cut approved; validate final text and end frame.
