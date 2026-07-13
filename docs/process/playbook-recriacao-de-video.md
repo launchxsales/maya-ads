@@ -360,6 +360,12 @@ Se o editor de vídeo não tiver geração disponível, informar isso claramente
 
 ## Fase 9 — Montagem na timeline do PalmierPro
 
+### Regra de execução obrigatória
+
+Antes de tocar em uma cena, abrir este playbook e reler as regras do tipo de mídia daquela cena. Depois de cada alteração, a revisão não pode se limitar ao novo elemento: inspecionar a janela que abrange **o fim da cena anterior, a cena alterada e o início da cena seguinte**. Como referência mínima, conferir pelo menos 1 segundo antes e 1 segundo depois de cada fronteira; quando o original tiver corte rápido, conferir quadro a quadro.
+
+Esta regra evita dois erros recorrentes: cortar uma boa tomada anterior para encaixar um novo asset e deixar uma foto/áudio continuar além do ponto em que a fala ou o take original termina.
+
 ### 9.1 Configuração
 
 - usar a mesma proporção do original: geralmente 9:16;
@@ -384,6 +390,8 @@ Se o editor de vídeo não tiver geração disponível, informar isso claramente
 - aplicar pan/zoom de poucos pontos percentuais;
 - usar keyframes suaves;
 - manter o áudio/voice-over original.
+- calcular a duração de cada foto a partir do take e do áudio original; a última foto deve terminar exatamente na fronteira da próxima cena, não permanecer em tela por conveniência;
+- quando houver dissolve, validar o primeiro, cada quadro intermediário e o último quadro da transição; se a timeline não oferecer sobreposição de faixas, usar um microtake técnico de transição documentado, sem substituir as fotos por avatar ou vídeo IA.
 
 **Foto de apoio**
 
@@ -456,6 +464,7 @@ Só exportar depois de concluir as três passagens.
 - há áudio duplicado, eco ou volume zerado errado?
 - as durações e cortes não têm buracos?
 - o CTA permanece até o final?
+- cada fronteira cena anterior → cena atual → próxima cena foi conferida em frame inicial, frame final e uma reprodução curta? Nenhum take bom foi truncado por um asset posterior?
 
 ### Passagem 2: comparação visual cena a cena
 
@@ -482,6 +491,7 @@ Checklist:
 - cenas de foto carregam a fala como voice-over, não lipsync indevido?
 - pausas foram mantidas ou intencionalmente removidas?
 - a transição visual acontece no momento correto da frase?
+- a última imagem termina quando a fala/take original termina, sem cauda visual indevida antes da próxima cena?
 
 Após cada passagem, registrar ajustes e repetir a inspeção afetada. Não dizer “pronto” se só os arquivos foram gerados, mas ainda não foram montados ou comparados.
 
@@ -512,6 +522,8 @@ O projeto só pode ser entregue quando todos estes itens forem verdadeiros:
 8. **Substituir ambiente sonoro por áudio limpo demais.**
 9. **Tratar referências na pasta como se já estivessem na timeline.**
 10. **Dizer que está pronto sem comparar o resultado exportado com o original.**
+11. **Editar uma cena isoladamente e cortar ou encobrir o fim da cena anterior.**
+12. **Deixar uma foto além da fala ou omitir zoom/transição que existiam no original.**
 
 ## Checklist final para outra IA
 
@@ -530,6 +542,10 @@ O projeto só pode ser entregue quando todos estes itens forem verdadeiros:
 [ ] Validei URLs de referência quando a ferramenta exige HTTPS.
 [ ] Usei lipsync somente onde a pessoa realmente fala para a câmera.
 [ ] Usei o PalmierPro para fotos, UI, CTA, cortes, áudio e zooms controlados.
+[ ] Antes de editar, reli no playbook as regras do tipo de mídia da cena.
+[ ] Após editar, inspecionei o fim da cena anterior, a cena atual e o início da próxima, incluindo os frames de fronteira.
+[ ] A duração visual de fotos e vídeos termina exatamente junto do take/áudio original correspondente.
+[ ] Reproduzi e conferi todo zoom, pan e transição que existe no original; não deixei movimento implícito de fora.
 [ ] Concluí e obtive aprovação da cena atual antes de começar a próxima.
 [ ] Mantive versões anteriores.
 [ ] Verifiquei cada cena na timeline, não apenas na biblioteca.
