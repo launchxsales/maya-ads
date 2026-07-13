@@ -188,6 +188,7 @@ Para cada cena, registrar:
 - Identificar se há push-in, pull-back, pan ou zoom. O movimento de câmera deve ser planejado com keyframes no PalmierPro, não delegado ao vídeo gerado.
 - Gerar a pessoa em enquadramento aberto apenas quando o original exige aproximação/zoom posterior. Se não houver movimento, o enquadramento inicial deve ser idêntico ao original — não deixar “folga” sem motivo.
 - Usar o áudio original e preservar o ruído ambiente compatível (mar, vento, sala, rua) quando ele fizer parte da prova de realidade.
+- **Regra anti-distorção para pessoa falando:** antes de enviar a referência limpa ao lipsync, comparar lado a lado com o frame original e confirmar proporção do rosto, tamanho da cabeça, quantidade de tronco visível, posição dos ombros e bordas do cenário. A limpeza não pode introduzir zoom, recrop, alongamento facial ou alteração corporal. Depois do lipsync, conferir início, meio e fim contra esses mesmos pontos; descartar qualquer take com enquadramento ou anatomia alterados, mesmo se a boca estiver bem sincronizada.
 
 **Antes e depois em foto**
 
