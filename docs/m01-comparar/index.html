@@ -9,14 +9,14 @@
 <h1>M01 · Comparar versões</h1>
 <p class="muted">Troque entre as versões para ver o mesmo momento. A original continua guardada.</p>
 <div class="tabs" aria-label="Versão do vídeo"><button id="v1" aria-pressed="false">V1 · Original</button><button id="v2" aria-pressed="true">V2 · Com inserções</button></div>
-<div class="player"><video id="video" controls playsinline preload="metadata" poster="../m01-v02/poster.jpg" src="../m01-v02/m01-v02.mp4"></video><p id="status" aria-live="polite">V2 · Com inserções</p></div>
+<div class="player"><video id="video" controls playsinline preload="metadata" poster="../m01-v02/poster.jpg?rev=sem-estabilizacao" src="../m01-v02/m01-v02.mp4?rev=sem-estabilizacao"></video><p id="status" aria-live="polite">V2 · Com inserções</p></div>
 <div class="moments" aria-label="Ir para uma inserção"><button data-time="21">21s · Antes/Depois</button><button data-time="34.44">34s · Tabela</button><button data-time="41.52">42s · Calendário</button><button data-time="50.64">51s · Documento</button></div>
-<div class="links"><a href="../m01/">Abrir original</a><a href="../m01-v02/">Abrir V2</a><a href="../m01-v02/m01-v02.mp4" download>Baixar V2</a></div>
+<div class="links"><a href="../m01/">Abrir original</a><a href="../m01-v02/">Abrir V2</a><a href="../m01-v02/m01-v02.mp4?rev=sem-estabilizacao" download>Baixar V2</a></div>
 <div class="note"><strong>Prévia de montagem.</strong> As imagens de Antes/Depois, tabela, calendário e documento são ilustrativas. O Antes/Depois foi gerado por IA para marcar posição e será substituído pelo caso real. O encerramento continua com a Maya.</div>
 </main>
 <script>
 const video=document.querySelector('#video'),status=document.querySelector('#status');let current='v2',pendingTime=null,continuePlaying=false;
-const versions={v1:{src:'../m01/m01.mp4',label:'V1 · Original'},v2:{src:'../m01-v02/m01-v02.mp4',label:'V2 · Com inserções'}};
+const versions={v1:{src:'../m01/m01.mp4',label:'V1 · Original'},v2:{src:'../m01-v02/m01-v02.mp4?rev=sem-estabilizacao',label:'V2 · Com inserções'}};
 function selectVersion(id){if(id===current)return;pendingTime=Number.isFinite(video.currentTime)?video.currentTime:0;continuePlaying=!video.paused;video.pause();current=id;video.removeAttribute('poster');video.src=versions[id].src;status.textContent=versions[id].label;for(const key of Object.keys(versions))document.getElementById(key).setAttribute('aria-pressed',String(key===id));video.load();}
 video.addEventListener('loadedmetadata',()=>{if(pendingTime!==null){video.currentTime=Math.min(pendingTime,Math.max(0,video.duration-.04));pendingTime=null;if(continuePlaying)video.play().catch(()=>{});}});
 for(const id of Object.keys(versions))document.getElementById(id).addEventListener('click',()=>selectVersion(id));
