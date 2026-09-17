@@ -1,4 +1,4 @@
-# Custos consolidados para o catálogo · M01–M08
+# Custos consolidados para o catálogo · M01–M09
 
 Testes identificados: aproximadamente US$8.0500, incluindo rateio provisório HeyGen. Cartesia pendente.
 
@@ -12,8 +12,9 @@ Testes identificados: aproximadamente US$8.0500, incluindo rateio provisório He
 | M06 | 5.0244 |
 | M07 | 5.4672 |
 | M08 | 15.0819 |
+| M09 | 8.4998 |
 
-Produção: US$76.7223. Total com testes: US$84.7723.
+Produção: US$85.2221. Total com testes: US$93.2721.
 
 - Produção inclui correções e refações. Testes identificados acima foram retirados dos criativos; não somar novamente.
 - Piloto aproveitado integralmente na entrega é produção (por exemplo M07); nome de arquivo contendo pilot não significa descarte.
@@ -24,4 +25,5 @@ Produção: US$76.7223. Total com testes: US$84.7723.
 - Palmier, FFmpeg/HTML e GitHub: sem cobrança incremental identificada. Higgsfield não foi utilizado.
 - M01 preserva V1 e V2 da mesma produção; não duplicar o custo pela quantidade de exports com/sem legenda.
 - M08: motion-b..g estimados pela regra ceil(segundos da fonte)x0,07 porque o resultado foi baixado sem o cabeçalho de unidades; confirmar no painel do fal. Reparo v1 recusado sem cobrança.
+- M09 (17/09): fotos-base por nano-banana a partir dos quadros do Renan + identidade da Maya; carro em 3 tomadas e fecho em 2 (fontes pré-retimadas pro ritmo da locução); TTS por bloco (v2 mais rápida nos blocos longos); LatentSync por lote.
 - M02–M04 (16/09): troca da voz TTS pela interpretação original da Talita convertida (Voice Changer) + LatentSync inteiro; três rodadas de lip-sync (v1, v2, v3) contadas como produção; 3 lotes cancelados sem cabeçalho assumidos cobrados (estimativa), confirmar no painel do fal.
