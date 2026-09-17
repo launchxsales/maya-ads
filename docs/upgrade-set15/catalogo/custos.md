@@ -1,10 +1,10 @@
-# Custos consolidados para o catálogo · M01–M09
+# Custos consolidados para o catálogo · M01–M10
 
 Testes identificados: aproximadamente US$8.0500, incluindo rateio provisório HeyGen. Cartesia pendente.
 
 | Criativo | Produção e ajustes (US$) |
 |---|---:|
-| M01 | 7.0883 |
+| M01 | 7.7497 |
 | M02 | 6.3838 |
 | M03 | 16.8495 |
 | M04 | 18.6392 |
@@ -13,8 +13,9 @@ Testes identificados: aproximadamente US$8.0500, incluindo rateio provisório He
 | M07 | 5.4672 |
 | M08 | 15.0819 |
 | M09 | 9.2348 |
+| M10 | 1.2880 |
 
-Produção: US$85.9571. Total com testes: US$94.0071.
+Produção: US$87.9065. Total com testes: US$95.9565.
 
 - Produção inclui correções e refações. Testes identificados acima foram retirados dos criativos; não somar novamente.
 - Piloto aproveitado integralmente na entrega é produção (por exemplo M07); nome de arquivo contendo pilot não significa descarte.
