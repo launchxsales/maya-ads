@@ -930,10 +930,10 @@ function srcOf(st,mode){const v=curVersion(st);if(st.voice==='old'){const pv=pre
 function setMode(id,mode,load=true){applyCard(id,{mode:mode},load)}
 function setVoice(id,voice){applyCard(id,{voice:voice},true)}
 function setVersion(id,vi){applyCard(id,{vi:Number(vi)},true)}
-function applyCard(id,change,load=true){const st=cards.get(id),card=document.getElementById(id),el=card.querySelector('video');
+function applyCard(id,change,load=true){const st=cards.get(id),card=document.getElementById(id),el=card.querySelector('video');const restart=('vi' in change)||('voice' in change);
   const mode='mode' in change?change.mode:st.mode,voice='voice' in change?change.voice:st.voice,vi='vi' in change?change.vi:st.vi;
   if(st.mode===mode&&st.voice===voice&&st.vi===vi)return;
-  const t=el.currentTime||0,playing=!el.paused;st.mode=mode;st.voice=voice;st.vi=vi;
+  const t=el.currentTime||0,playing=!el.paused;st.mode=mode;st.voice=voice;st.vi=vi;if(restart){el.pause();const pb=card.querySelector('.start-play');if(pb)pb.hidden=false}
   const v=curVersion(st),pv=prevVoiceOf(st.creative,v),eff=pv?voice:'new';if(!pv)st.voice='new';
   card.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
   card.querySelectorAll('[data-voice]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.voice===eff)));
@@ -949,7 +949,7 @@ function applyCard(id,change,load=true){const st=cards.get(id),card=document.get
   card.querySelector('.error-message').hidden=true;
   el.setAttribute('aria-label',st.creative.id+' '+v.title+', '+v.version+', '+currentLabel(mode)+(eff==='old'?', voz anterior':''));
   if(mode==='clean'||eff==='old')el.removeAttribute('poster');else el.poster=v.poster;
-  el.src=src;if(load){el.addEventListener('loadedmetadata',()=>{el.currentTime=Math.min(t,Math.max(0,el.duration-.05));if(playing)el.play().catch(()=>{})},{once:true});el.load()}}
+  el.src=src;if(load){el.addEventListener('loadedmetadata',()=>{if(restart){el.currentTime=0}else{el.currentTime=Math.min(t,Math.max(0,el.duration-.05));if(playing)el.play().catch(()=>{})}},{once:true});el.load()}}
 all('.card:not(.original-card)').forEach(card=>{const id=card.id,v=card.querySelector('video'),play=card.querySelector('.start-play');play.onclick=()=>{pauseOthers(v);v.play().catch(()=>{card.querySelector('.error-message').hidden=false})};v.addEventListener('play',()=>{pauseOthers(v);play.hidden=true});v.addEventListener('pause',()=>play.hidden=false);v.addEventListener('error',()=>{card.querySelector('.error-message').hidden=false});card.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(id,b.dataset.mode));card.querySelectorAll('[data-voice]').forEach(b=>b.onclick=()=>setVoice(id,b.dataset.voice));card.querySelectorAll('[data-version]').forEach(b=>b.onclick=()=>setVersion(id,b.dataset.version));card.querySelector('.copy-variant').onclick=()=>copy(catalogURL(curVersion(cards.get(id)).id+(cards.get(id).mode==='clean'?'--sem-legenda':'')))});
 all('.original-card').forEach(card=>{const v=card.querySelector('video'),play=card.querySelector('.start-play');play.onclick=()=>{pauseOthers(v);v.play().catch(()=>{card.querySelector('.error-message').hidden=false})};v.addEventListener('play',()=>{pauseOthers(v);play.hidden=true});v.addEventListener('pause',()=>play.hidden=false);v.addEventListener('error',()=>{card.querySelector('.error-message').hidden=false});card.querySelector('.copy-original').onclick=()=>copy(catalogURL(card.id))});
 function normalize(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
