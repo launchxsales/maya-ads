@@ -1,19 +1,19 @@
 # Custos consolidados para o catálogo · M01–M08
 
-Testes identificados: aproximadamente US$7.6238, incluindo rateio provisório HeyGen. Cartesia pendente.
+Testes identificados: aproximadamente US$8.0500, incluindo rateio provisório HeyGen. Cartesia pendente.
 
 | Criativo | Produção e ajustes (US$) |
 |---|---:|
-| M01 | 7.0851 |
-| M02 | 4.8959 |
-| M03 | 11.9967 |
-| M04 | 12.6386 |
+| M01 | 7.0883 |
+| M02 | 6.3838 |
+| M03 | 16.8495 |
+| M04 | 18.6392 |
 | M05 | 2.1881 |
 | M06 | 5.0244 |
 | M07 | 5.4672 |
-| M08 | 9.9354 |
+| M08 | 9.9419 |
 
-Produção: US$59.2313. Total com testes: US$66.8551.
+Produção: US$71.5823. Total com testes: US$79.6323.
 
 - Produção inclui correções e refações. Testes identificados acima foram retirados dos criativos; não somar novamente.
 - Piloto aproveitado integralmente na entrega é produção (por exemplo M07); nome de arquivo contendo pilot não significa descarte.
@@ -24,3 +24,4 @@ Produção: US$59.2313. Total com testes: US$66.8551.
 - Palmier, FFmpeg/HTML e GitHub: sem cobrança incremental identificada. Higgsfield não foi utilizado.
 - M01 preserva V1 e V2 da mesma produção; não duplicar o custo pela quantidade de exports com/sem legenda.
 - M08: motion-b..g estimados pela regra ceil(segundos da fonte)x0,07 porque o resultado foi baixado sem o cabeçalho de unidades; confirmar no painel do fal. Reparo v1 recusado sem cobrança.
+- M02–M04 (16/09): troca da voz TTS pela interpretação original da Talita convertida (Voice Changer) + LatentSync inteiro; três rodadas de lip-sync (v1, v2, v3) contadas como produção; 3 lotes cancelados sem cabeçalho assumidos cobrados (estimativa), confirmar no painel do fal.
