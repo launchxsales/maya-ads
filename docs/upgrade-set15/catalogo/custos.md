@@ -11,9 +11,9 @@ Testes identificados: aproximadamente US$8.0500, incluindo rateio provisório He
 | M05 | 2.1881 |
 | M06 | 5.0244 |
 | M07 | 5.4672 |
-| M08 | 9.9419 |
+| M08 | 14.3319 |
 
-Produção: US$71.5823. Total com testes: US$79.6323.
+Produção: US$75.9723. Total com testes: US$84.0223.
 
 - Produção inclui correções e refações. Testes identificados acima foram retirados dos criativos; não somar novamente.
 - Piloto aproveitado integralmente na entrega é produção (por exemplo M07); nome de arquivo contendo pilot não significa descarte.
