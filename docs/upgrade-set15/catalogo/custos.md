@@ -17,9 +17,9 @@ Testes identificados: aproximadamente US$8.0500, incluindo rateio provisório He
 | M11 | 0.0000 | 0 | 0 |
 | M12 | 2.1800 | 15 | 0 |
 | M13 | 5.0440 | 34 | 570 |
-| M14 | 12.1200 | 80 | 2600 |
+| M14 | 12.5600 | 83 | 2600 |
 
-Produção: US$107.8805. Total com testes: US$115.9305.
+Produção: US$108.3205. Total com testes: US$116.3705.
 
 - Produção inclui correções e refações. Testes identificados acima foram retirados dos criativos; não somar novamente.
 - ElevenLabs: créditos (caracteres) × US$ 6 / 30.000, tarifa pública. HeyGen: créditos do plano × US$ 29 / 200, hipótese provisória.
