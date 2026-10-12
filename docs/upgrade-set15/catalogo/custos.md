@@ -1,4 +1,4 @@
-# Custos consolidados para o catálogo · M01–M20
+# Custos consolidados para o catálogo · M01–M29
 
 Testes identificados: aproximadamente US$8.0500, incluindo rateio provisório HeyGen. Cartesia pendente.
 
@@ -24,10 +24,19 @@ Testes identificados: aproximadamente US$8.0500, incluindo rateio provisório He
 | M18 | 0.9900 | 6.67 | 101 |
 | M19 | 0.9910 | 6.67 | 103 |
 | M20 | 0.9820 | 6.67 | 59 |
+| M21 | 0.2180 | 0 | 1091 |
+| M22 | 2.9260 | 19 | 691 |
+| M23 | 0.8080 | 4 | 950 |
+| M24 | 1.6760 | 10.0 | 1067 |
+| M25 | 1.6750 | 10.0 | 1058 |
+| M26 | 1.6870 | 10.0 | 1119 |
+| M27 | 3.8570 | 24.67 | 1262 |
+| M28 | 3.8700 | 24.67 | 1326 |
+| M29 | 3.8770 | 24.67 | 1358 |
 
-Produção: US$114.2415. Total com testes: US$122.2915.
+Produção: US$134.8355. Total com testes: US$142.8855.
 
 - Produção inclui correções e refações. Testes identificados acima foram retirados dos criativos; não somar novamente.
 - ElevenLabs: créditos (caracteres) × US$ 6 / 30.000, tarifa pública. HeyGen: créditos do plano × US$ 29 / 200, hipótese provisória (o plano virou Pro em 12/10).
-- M11 a M20: só HeyGen e ElevenLabs; fal sem uso. M15 a M20 são ganchos novos sobre o M10 e o M02 (o corpo não é recontado). ChatGPT/Codex fora do cálculo por instrução explícita.
+- M11 a M29: só HeyGen, ElevenLabs e (M21 a M29) fotos de referência no OpenRouter; fal sem uso. M15 a M20 são ganchos novos sobre o M10 e o M02 (o corpo não é recontado). ChatGPT/Codex fora do cálculo por instrução explícita.
 - Atualizado em 2026-10-12.
