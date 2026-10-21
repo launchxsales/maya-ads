@@ -4,7 +4,7 @@
 :root{--ink:#fff;--paper:#000;--muted:#b3b3b3;--line:#333;--blue:#0A84FF;--red:#FF3B30;--yellow:#FFD60A;--orange:#ff812e;--surface:#111}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}button,input{font:inherit}button,a,input,summary{-webkit-tap-highlight-color:transparent}button,a{touch-action:manipulation}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:4px}button:disabled{cursor:wait;opacity:.55}.skip{position:fixed;top:-70px;left:20px;z-index:20;background:var(--yellow);padding:14px}.skip:focus{top:10px}.wrap{width:min(1240px,calc(100% - 80px));margin-inline:auto}.topline{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;font-size:24px;font-weight:900;letter-spacing:-1px}.brand-mark{display:grid;grid-template-columns:8px 8px;gap:3px}.brand-mark i{width:8px;height:8px;background:var(--surface)}.brand-mark i:first-child{background:var(--blue)}.brand-mark i:last-child{background:var(--red)}.topline small{font-size:11px;text-transform:uppercase;letter-spacing:1.7px;color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--ink);border-radius:4px;padding:12px 17px;background:var(--surface);color:var(--ink);text-decoration:none;font-weight:700;font-size:13px;line-height:1.25;min-height:43px}.btn:hover{background:#f1f1f1}.btn svg,.icon{width:17px;height:17px;flex-shrink:0}.btn.dark{background:var(--surface);color:var(--ink)}.btn.dark:hover{background:#333}.hero{padding:57px 0 40px;display:grid;grid-template-columns:1fr 265px;align-items:end;gap:40px}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;display:flex;align-items:center;gap:9px}.square{width:8px;height:8px;background:var(--red);display:inline-block}.hero h1{font-size:clamp(46px,6vw,82px);font-weight:850;letter-spacing:-4px;line-height:1.02;margin:22px 0 22px}.hero h1 em{font-family:Georgia,'Times New Roman',serif;font-weight:400}.hero p{color:#565656;line-height:1.65;max-width:570px;font-size:16px;margin:0}.stats{padding:24px;background:var(--surface);color:var(--ink);position:relative}.stats:before{content:'';position:absolute;top:0;left:0;width:100%;height:5px;background:linear-gradient(90deg,var(--red) 0 25%,var(--blue) 25% 50%,var(--yellow) 50% 75%,var(--orange) 75%)}.stats-line{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid #393939}.stats-line:last-child{border:0;padding-bottom:0}.stats strong{font-size:37px;font-weight:800;letter-spacing:-2px}.stats span{font-size:12px;color:#c7c7c7}.indexbar{position:sticky;top:0;z-index:5;background:#000;border-block:1px solid var(--ink)}.index-inner{display:flex;justify-content:space-between;gap:25px;align-items:center;min-height:64px}.index-links{display:flex;gap:5px;align-items:center;overflow:auto;padding:7px 0}.index-links a{font-size:13px;font-weight:800;text-decoration:none;padding:13px 18px;border-radius:3px;white-space:nowrap}.index-links a:hover{background:#efefef}.index-label{font-size:10px;text-transform:uppercase;letter-spacing:1.7px;white-space:nowrap;color:var(--muted)}.tools{padding:30px 0 14px;display:flex;gap:20px;justify-content:space-between;align-items:center}.filters{display:flex;gap:6px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:var(--surface);color:#b3b3b3;padding:10px 15px;border-radius:30px;font-size:12px;font-weight:700;min-height:40px}.filter[aria-pressed=true]{background:var(--surface);color:var(--ink);border-color:var(--line)}.search{border-bottom:1px solid #444;display:flex;align-items:center;gap:10px;max-width:275px;min-width:220px}.search input{width:100%;border:0;background:transparent;font-size:13px;padding:12px 0;outline-offset:0}.search svg{color:#808080}.list-status{font-size:12px;color:#808080;margin:0 0 12px}.creative{padding:39px 0 45px;border-bottom:1px solid var(--line);--accent:var(--blue)}.creative.red{--accent:var(--red)}.creative.yellow{--accent:var(--yellow)}.creative.orange{--accent:var(--orange)}.section-head{display:flex;justify-content:space-between;gap:24px;margin-bottom:25px;align-items:center}.section-title{display:flex;gap:19px;align-items:flex-start}.number{min-width:57px;min-height:57px;display:grid;place-items:center;background:var(--accent);color:var(--ink);font-size:13px;font-weight:900;border-radius:4px}.blue .number{color:var(--ink)}.section-head h2{font-size:29px;letter-spacing:-1px;margin:0 0 7px}.section-head p{font-size:13px;color:var(--muted);margin:0;line-height:1.65;max-width:670px}.note{display:inline-flex;font-size:11px;font-weight:700;border:1px solid #d9bd51;background:#2a2400;padding:7px 10px;border-radius:3px;margin-top:12px}.original-link{white-space:nowrap;flex-shrink:0}.variants{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}.variants.two{grid-template-columns:repeat(2,minmax(0,1fr));max-width:815px}.variants.one{grid-template-columns:minmax(0,1fr);max-width:397px}.original-card{border-color:var(--line);background:#0b0b0b}
 .original-card .card-head h3{color:var(--muted)}
 .original-card .duration{color:var(--muted)}
-.card{border:1px solid #333;border-radius:7px;overflow:hidden;min-width:0;background:#000;scroll-margin-top:88px}.card-head{padding:17px 18px 15px;display:flex;justify-content:space-between;gap:10px}.card-head h3{font-size:15px;letter-spacing:-.25px;margin:0 0 6px}.version{font-size:11px;color:#707070}.hold{display:table;margin:0 0 6px;padding:3px 8px;border-radius:999px;background:#fde2e2;color:#b42318;font-size:11px;font-weight:700;line-height:1.3}.duration{font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap;padding-top:3px;color:#b3b3b3}.video-stage{position:relative;background:#1a1a1a;display:flex;justify-content:center}.video-stage video{display:block;width:100%;aspect-ratio:9/16;max-height:490px;background:#1a1a1a;object-fit:contain}.start-play{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);display:grid;place-items:center;background:var(--surface);border:0;color:#fff;width:58px;height:58px;border-radius:50%;box-shadow:0 2px 24px #0006;transition:transform .15s}.start-play:hover{transform:translate(-50%,-50%) scale(1.08)}.start-play svg{width:22px;height:22px;margin-left:3px}.card-controls{padding:16px 18px 18px}.tabs{display:flex;background:#1a1a1a;padding:4px;border-radius:5px;gap:4px}.tabs button{width:50%;border:0;border-radius:3px;font-size:11px;padding:11px 5px;background:transparent;color:#b3b3b3;font-weight:700}.tabs button[aria-pressed=true]{background:var(--surface);color:#fff;box-shadow:0 1px 4px #0008}
+.card{border:1px solid #333;border-radius:7px;overflow:hidden;min-width:0;background:#000;scroll-margin-top:88px}.card-head{padding:17px 18px 15px;display:flex;justify-content:space-between;gap:10px}.card-head h3{font-size:15px;letter-spacing:-.25px;margin:0 0 6px}.version{font-size:11px;color:#707070}.duration{font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap;padding-top:3px;color:#b3b3b3}.video-stage{position:relative;background:#1a1a1a;display:flex;justify-content:center}.video-stage video{display:block;width:100%;aspect-ratio:9/16;max-height:490px;background:#1a1a1a;object-fit:contain}.start-play{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);display:grid;place-items:center;background:var(--surface);border:0;color:#fff;width:58px;height:58px;border-radius:50%;box-shadow:0 2px 24px #0006;transition:transform .15s}.start-play:hover{transform:translate(-50%,-50%) scale(1.08)}.start-play svg{width:22px;height:22px;margin-left:3px}.card-controls{padding:16px 18px 18px}.tabs{display:flex;background:#1a1a1a;padding:4px;border-radius:5px;gap:4px}.tabs button{width:50%;border:0;border-radius:3px;font-size:11px;padding:11px 5px;background:transparent;color:#b3b3b3;font-weight:700}.tabs button[aria-pressed=true]{background:var(--surface);color:#fff;box-shadow:0 1px 4px #0008}
 .switcher{margin-bottom:10px}
 .switch-label{display:block;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 0 5px}
 .tabs.voice button[aria-pressed=true]{background:var(--blue);color:#fff}
@@ -14,10 +14,10 @@
 @media(max-width:640px){html{scroll-padding-top:73px}.wrap{width:calc(100% - 32px)}.topline{height:68px}.topline small{display:none}.topline .btn{font-size:11px;padding:10px 12px;min-height:38px}.brand{font-size:22px}.hero{display:block;padding:35px 0 27px}.hero h1{font-size:54px;letter-spacing:-3px;margin-top:18px;margin-bottom:19px}.hero p{font-size:14px;line-height:1.7}.stats{margin-top:25px;display:flex;justify-content:space-between;padding:19px 19px 13px}.stats-line{display:block;padding:0 12px 0 0;border:0}.stats strong{font-size:29px;letter-spacing:-1px;display:block;margin-bottom:6px}.stats span{font-size:10px}.index-inner{min-height:57px}.index-links{gap:0;justify-content:space-between}.index-links a{padding:12px 10px;font-size:11px}.tools{display:block;padding-top:22px}.filters{gap:5px}.filter{font-size:11px;padding:9px 12px;min-height:37px}.search{margin-top:13px;max-width:none;min-width:0}.list-status{margin:12px 0 0}.creative{padding:31px 0}.section-head{display:block;margin-bottom:20px}.section-title{gap:13px}.number{min-width:46px;min-height:46px;font-size:12px}.section-head h2{font-size:25px}.section-head p{font-size:12px}.original-link{margin-top:17px;width:100%;justify-content:space-between}.variants,.variants.two,.variants.one{grid-template-columns:minmax(0,1fr);max-width:none;gap:20px}.card-head{padding:17px 18px}.card-head h3{font-size:16px}.video-stage video{max-height:none;width:100%;aspect-ratio:9/16}.card-controls{padding:16px 18px}.tabs button{font-size:12px;padding:12px 6px}.card-bottom{font-size:11px}.history-row{display:block;padding:15px}.history-actions{justify-content:flex-start;margin-top:9px}.history-actions button{min-height:39px}.history summary{font-size:12px}.upcoming{display:block;padding:22px;margin-top:26px}.upcoming .btn{margin-top:20px;width:100%}footer .wrap{display:block}footer p+ p{margin-top:15px}.dialog{width:calc(100vw - 20px);max-height:95dvh}.dialog-head{padding:12px 15px;position:sticky;top:0;background:#000;z-index:1}.dialog-head h2{font-size:14px}.dialog-close{width:34px;height:34px}.dialog-body{display:flex;flex-direction:column}.dialog-video{max-height:56dvh;flex:none}.dialog-info{padding:17px;width:100%}.dialog-info p{margin-bottom:10px;font-size:12px}.dialog-info a{margin-top:8px}.dialog-tag{margin-bottom:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 .production-info{padding:12px 0 32px}.production-info h2{font-size:29px;letter-spacing:-1px;margin:16px 0 22px}.cost-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.cost-summary>div{padding:20px;border:1px solid #333;border-top:4px solid var(--blue)}.cost-summary>.test-total{border-top-color:var(--orange)}.cost-summary>div:last-child{border-top-color:var(--red)}.cost-summary span{display:block;color:#999;font-size:12px;line-height:1.5}.cost-summary strong{display:block;font-size:29px;margin-top:9px;letter-spacing:-1px}.finance-note{font-size:12px;color:#999;line-height:1.7;max-width:1000px}.method{border:1px solid #333;margin-top:20px;padding:16px 20px}.method summary{cursor:pointer;font-size:13px;font-weight:bold}.platform-scroll{overflow-x:auto;margin-top:20px}.platform-table{border-collapse:collapse;width:100%;font-size:12px;line-height:1.65}.platform-table th,.platform-table td{padding:13px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #333}.platform-table thead th{font-size:10px;text-transform:uppercase;letter-spacing:1px;background:#1a1a1a}.platform-table tbody th{min-width:120px}.creative-cost{display:flex;align-items:center;gap:15px;flex-wrap:wrap;padding:14px 18px;margin:-5px 0 24px;background:#1a1a1a;border-left:4px solid var(--accent)}.creative-cost strong{font-size:22px;letter-spacing:-.7px}.creative-cost span{font-size:12px;line-height:1.55;color:#b3b3b3}.creative-cost small{display:block;color:#999;font-size:11px}.creative-cost details{font-size:11px;margin-left:auto}.creative-cost summary{cursor:pointer}.creative-cost details p{line-height:1.8}@media(max-width:650px){.cost-summary{grid-template-columns:1fr;gap:9px}.cost-summary>div{display:flex;align-items:center;justify-content:space-between;padding:15px}.cost-summary strong{font-size:24px;margin:0}.cost-summary span{max-width:65%}.creative-cost details{margin-left:0;width:100%}.platform-table{min-width:640px}}.script-btn{display:inline-flex;align-items:center;gap:8px;margin-left:auto;align-self:flex-start;background:var(--accent,var(--blue));color:#000;border:0;border-radius:999px;padding:12px 18px;font-weight:700;font-size:13px;letter-spacing:.2px;cursor:pointer;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.35)}.script-btn svg{width:16px;height:16px}.script-btn:hover{filter:brightness(1.1)}.section-head{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap}.script-dialog{width:min(820px,calc(100% - 32px));max-height:88vh}.script-dialog .dialog-body{display:block;padding:0 22px 22px}.script-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}.script-tabs button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:9px 14px;font-size:12px;font-weight:700;cursor:pointer}.script-tabs button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}.script-text{white-space:pre-wrap;font-size:16px;line-height:1.75;color:var(--ink);max-height:52vh;overflow:auto;padding:16px 18px;border:1px solid var(--line);background:#0b0b0b;border-radius:10px}.script-text b{color:var(--muted);font-weight:700}.script-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.script-original{margin-top:16px;border:1px solid var(--line);padding:12px 16px;border-radius:10px}.script-original summary{cursor:pointer;font-weight:700;font-size:13px}.script-original .script-text{margin-top:10px;max-height:40vh;font-size:14px;color:var(--muted)}@media(max-width:640px){.script-btn{width:100%;justify-content:center;margin-left:0}.script-text{font-size:15px;max-height:46vh}}.tabbar{padding-top:30px}.tabbar .filter{font-size:13px;padding:12px 18px}.tabbar .filter[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}</style></head><body><a class="skip" href="#catalogo">Pular para os criativos</a><header class="wrap topline"><a class="brand" href="#topo" aria-label="Maya, início"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>MAYA <small>Catálogo de criativos</small></a><button class="btn" id="share-catalog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7"/></svg>Compartilhar catálogo</button></header>
-<main id="topo"><div class="wrap hero"><div><div class="eyebrow"><span class="square"></span> Acervo de produção · Setembro 2026</div><h1>Catálogo de<br><em>criativos.</em></h1><p>Os originais e todas as versões produzidas, reunidos para você assistir, comparar e baixar.</p></div><div class="stats" aria-label="Resumo do catálogo"><div class="stats-line"><strong>20</strong><span>criativos com vídeos</span></div><div class="stats-line"><strong>59</strong><span>versões atuais</span></div><div class="stats-line"><strong>118</strong><span>arquivos atuais</span></div></div></div>
-<section class="wrap production-info" aria-labelledby="production-title"><div class="eyebrow"><span class="square"></span>Como produzimos</div><h2 id="production-title">Ferramentas, técnica e custos.</h2><div class="cost-summary"><div><span>Produção + ajustes · 20 criativos + 2 de funil (8 versões)</span><strong>US$ 150,59</strong></div><div class="test-total"><span>Testes identificados · todas as plataformas</span><strong>US$ 8,05</strong></div><div><span>Total apurado · produção + testes</span><strong>US$ 158,64</strong></div></div><p class="finance-note">Valores aproximados em dólar; teste Cartesia ainda a conciliar. ChatGPT/Codex fora do cálculo. Testes aparecem somente no total acima; os custos de cada criativo incluem todas as suas variantes e ajustes, sem duplicar os trechos compartilhados.</p><details class="method" open><summary>Ver plataformas, modelos e método de cálculo</summary><div class="platform-scroll"><table class="platform-table"><thead><tr><th>Plataforma</th><th>Função / modelos</th><th>Técnica</th></tr></thead><tbody><tr><th>fal.ai</th><td><b>Movimento e boca</b><br>Kling 2.6 Motion Control; Kling 2.5 Turbo I2V (M07); LatentSync; Sync 2 no M06.</td><td>Transferência de gestos do vídeo original ou animação da foto de referência, seguida de sincronização labial.</td></tr><tr><th>ElevenLabs</th><td><b>Locução</b><br>Eleven Multilingual v2 · clone autorizado da Mônica (Maya) · Diego nas perguntas.</td><td>Roteiro falado, direção de entonação e alinhamento das palavras. V3 também foi testado. No M02, M03, M04 e M08, Voice Changer (speech-to-speech) transfere a interpretação original para a voz da Maya; TTS só nos trechos alterados.</td></tr><tr><th>OpenRouter</th><td><b>Análise dos vídeos</b><br>Google Gemini 2.5 Flash.</td><td>Revisão audiovisual dos originais e resultados anteriores. Não gera os vídeos. M07 revisado localmente, sem consumo OpenRouter.</td></tr><tr><th>ChatGPT / Codex</th><td><b>Direção e imagens</b><br>GPT-6 / Codex; geração nativa de imagem, sem identificador de versão exposto.</td><td>Pesquisa, decupagem, roteiro, persona, referências e automação da montagem. Uso pela assinatura existente. Retomada do M08 e troca de voz do M02 ao M04 com Claude Code.</td></tr><tr><th>Palmier Pro + ferramentas locais</th><td><b>Montagem e acabamento</b><br>Palmier MCP · FFmpeg/libass · HTML/CSS · Playwright.</td><td>Cortes secos, inserções, demonstração do app, equilíbrio de volume e legenda branca com destaque verde. Exportações com/sem legenda.</td></tr><tr><th>HeyGen</th><td><b>Cenas geradas e avatar da Maya</b><br>HeyGen Video (heygen-video-1, texto/imagem/referência → vídeo com áudio) nos M12, M13 e M14; Avatar IV no M10 e no fechamento do M14.</td><td>Cena por pedido (5 a 15 s), quadro de referência pra manter personagem e ambiente, fala do ElevenLabs entregue como áudio de referência (o modelo anima a boca em cima). Créditos do plano Creator, estimados a US$ 29 / 200. Cartesia só nos testes iniciais.</td></tr><tr><th>GitHub Pages</th><td><b>Catálogo e arquivos</b><br>Hospedagem estática.</td><td>Visualização, comparação e download no celular. Higgsfield foi pesquisado, mas não utilizado.</td></tr></tbody></table></div><p class="finance-note"><b>Assinaturas:</b> ElevenLabs calculado por créditos reais a US$ 6 / 30.000. HeyGen: 7 créditos de teste, estimados em US$ 1,015 pela hipótese do plano legado US$ 29 / 200 créditos. As faturas efetivas podem mudar esses rateios. <a href="https://elevenlabs.io/pricing" target="_blank" rel="noopener">Tarifa ElevenLabs</a>.</p><p class="finance-note"><b>A conciliar:</b> o teste Cartesia de 10,9 s, ainda sem recibo. Não foi tratado como gratuito nem incluído numericamente. ChatGPT/Codex não entra no custo, conforme solicitado. Palmier, edição local e GitHub não tiveram cobrança incremental identificada. OpenRouter compartilhado foi rateado entre os criativos envolvidos.</p><p class="finance-note">Pilotos aproveitados na entrega contam como produção. A linha de testes reúne comparações de modelos/vozes e pilotos descartados identificados. Correções normais permanecem no custo do criativo. <a href="custos.csv" download>Baixar custos em CSV</a> · <a href="custos.md" target="_blank">Ver memória de cálculo</a></p></details></section>
+<main id="topo"><div class="wrap hero"><div><div class="eyebrow"><span class="square"></span> Acervo de produção · Setembro 2026</div><h1>Catálogo de<br><em>criativos.</em></h1><p>Os originais e todas as versões produzidas, reunidos para você assistir, comparar e baixar.</p></div><div class="stats" aria-label="Resumo do catálogo"><div class="stats-line"><strong>20</strong><span>criativos com vídeos</span></div><div class="stats-line"><strong>55</strong><span>versões atuais</span></div><div class="stats-line"><strong>110</strong><span>arquivos atuais</span></div></div></div>
+<section class="wrap production-info" aria-labelledby="production-title"><div class="eyebrow"><span class="square"></span>Como produzimos</div><h2 id="production-title">Ferramentas, técnica e custos.</h2><div class="cost-summary"><div><span>Produção + ajustes · 20 criativos + 2 de funil (4 versões)</span><strong>US$ 150,59</strong></div><div class="test-total"><span>Testes identificados · todas as plataformas</span><strong>US$ 8,05</strong></div><div><span>Total apurado · produção + testes</span><strong>US$ 158,64</strong></div></div><p class="finance-note">Valores aproximados em dólar; teste Cartesia ainda a conciliar. ChatGPT/Codex fora do cálculo. Testes aparecem somente no total acima; os custos de cada criativo incluem todas as suas variantes e ajustes, sem duplicar os trechos compartilhados.</p><details class="method" open><summary>Ver plataformas, modelos e método de cálculo</summary><div class="platform-scroll"><table class="platform-table"><thead><tr><th>Plataforma</th><th>Função / modelos</th><th>Técnica</th></tr></thead><tbody><tr><th>fal.ai</th><td><b>Movimento e boca</b><br>Kling 2.6 Motion Control; Kling 2.5 Turbo I2V (M07); LatentSync; Sync 2 no M06.</td><td>Transferência de gestos do vídeo original ou animação da foto de referência, seguida de sincronização labial.</td></tr><tr><th>ElevenLabs</th><td><b>Locução</b><br>Eleven Multilingual v2 · clone autorizado da Mônica (Maya) · Diego nas perguntas.</td><td>Roteiro falado, direção de entonação e alinhamento das palavras. V3 também foi testado. No M02, M03, M04 e M08, Voice Changer (speech-to-speech) transfere a interpretação original para a voz da Maya; TTS só nos trechos alterados.</td></tr><tr><th>OpenRouter</th><td><b>Análise dos vídeos</b><br>Google Gemini 2.5 Flash.</td><td>Revisão audiovisual dos originais e resultados anteriores. Não gera os vídeos. M07 revisado localmente, sem consumo OpenRouter.</td></tr><tr><th>ChatGPT / Codex</th><td><b>Direção e imagens</b><br>GPT-6 / Codex; geração nativa de imagem, sem identificador de versão exposto.</td><td>Pesquisa, decupagem, roteiro, persona, referências e automação da montagem. Uso pela assinatura existente. Retomada do M08 e troca de voz do M02 ao M04 com Claude Code.</td></tr><tr><th>Palmier Pro + ferramentas locais</th><td><b>Montagem e acabamento</b><br>Palmier MCP · FFmpeg/libass · HTML/CSS · Playwright.</td><td>Cortes secos, inserções, demonstração do app, equilíbrio de volume e legenda branca com destaque verde. Exportações com/sem legenda.</td></tr><tr><th>HeyGen</th><td><b>Cenas geradas e avatar da Maya</b><br>HeyGen Video (heygen-video-1, texto/imagem/referência → vídeo com áudio) nos M12, M13 e M14; Avatar IV no M10 e no fechamento do M14.</td><td>Cena por pedido (5 a 15 s), quadro de referência pra manter personagem e ambiente, fala do ElevenLabs entregue como áudio de referência (o modelo anima a boca em cima). Créditos do plano Creator, estimados a US$ 29 / 200. Cartesia só nos testes iniciais.</td></tr><tr><th>GitHub Pages</th><td><b>Catálogo e arquivos</b><br>Hospedagem estática.</td><td>Visualização, comparação e download no celular. Higgsfield foi pesquisado, mas não utilizado.</td></tr></tbody></table></div><p class="finance-note"><b>Assinaturas:</b> ElevenLabs calculado por créditos reais a US$ 6 / 30.000. HeyGen: 7 créditos de teste, estimados em US$ 1,015 pela hipótese do plano legado US$ 29 / 200 créditos. As faturas efetivas podem mudar esses rateios. <a href="https://elevenlabs.io/pricing" target="_blank" rel="noopener">Tarifa ElevenLabs</a>.</p><p class="finance-note"><b>A conciliar:</b> o teste Cartesia de 10,9 s, ainda sem recibo. Não foi tratado como gratuito nem incluído numericamente. ChatGPT/Codex não entra no custo, conforme solicitado. Palmier, edição local e GitHub não tiveram cobrança incremental identificada. OpenRouter compartilhado foi rateado entre os criativos envolvidos.</p><p class="finance-note">Pilotos aproveitados na entrega contam como produção. A linha de testes reúne comparações de modelos/vozes e pilotos descartados identificados. Correções normais permanecem no custo do criativo. <a href="custos.csv" download>Baixar custos em CSV</a> · <a href="custos.md" target="_blank">Ver memória de cálculo</a></p></details></section>
 <nav class="indexbar" aria-label="Ir para um criativo"><div class="wrap index-inner"><span class="index-label">Navegue pelo acervo</span><div class="index-links"><a href="#M01">M01</a><a href="#M02">M02</a><a href="#M03">M03</a><a href="#M04">M04</a><a href="#M05-creative">M05</a><a href="#M06-creative">M06</a><a href="#M07">M07</a><a href="#M08">M08</a><a href="#M09">M09</a><a href="#M10">M10</a><a href="#M11-creative">M11</a><a href="#M12">M12</a><a href="#M13">M13</a><a href="#M14">M14</a><a href="#M15">M15</a><a href="#M16">M16</a><a href="#M17">M17</a><a href="#M18">M18</a><a href="#M19">M19</a><a href="#M20">M20</a><a href="#M02-qh">M02-qh</a><a href="#M02-qb">M02-qb</a></div><span class="index-label">Atualizado em 15 set.</span></div></nav>
-<div class="wrap" id="catalogo"><div class="filters tabbar" role="group" aria-label="Aba do catálogo"><button class="filter" data-tab="main" aria-pressed="true">Criativos</button><button class="filter" data-tab="funis" aria-pressed="false">Novos funis · quizzes com chiclete</button></div><div class="tools"><div class="filters" role="group" aria-label="Filtrar por variante"><button class="filter" data-filter="all" aria-pressed="true">Todos</button><button class="filter" data-filter="shot" aria-pressed="false">Shot</button><button class="filter" data-filter="dieta" aria-pressed="false">Dieta Invertida</button><button class="filter" data-filter="teste" aria-pressed="false">Diagnóstico</button></div><label class="search"><svg viewBox="0 0 24 24" class="icon" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg><input type="search" id="search" aria-label="Buscar criativo" placeholder="Buscar por nome ou código" autocomplete="off"></label></div><p class="list-status" id="list-status" role="status" aria-live="polite">20 criativos · 51 versões atuais</p><div id="creative-list"></div><p class="empty" id="empty" hidden>Nenhum criativo encontrado. Tente outro nome ou filtro.</p>
+<div class="wrap" id="catalogo"><div class="filters tabbar" role="group" aria-label="Filtrar por quiz de destino"><button class="filter" data-tab="all" aria-pressed="true">Todos</button><button class="filter" data-tab="qc" aria-pressed="false">/qc · Magra Sem Caneta</button><button class="filter" data-tab="qh" aria-pressed="false">/qh · Hábitos Japoneses</button><button class="filter" data-tab="qb" aria-pressed="false">/qb · Barriga das 18h</button><button class="filter" data-tab="qt" aria-pressed="false">/qt · Truque do Cravo</button></div><div class="tools"><div class="filters" role="group" aria-label="Filtrar por variante"><button class="filter" data-filter="all" aria-pressed="true">Todos</button><button class="filter" data-filter="shot" aria-pressed="false">Shot</button><button class="filter" data-filter="dieta" aria-pressed="false">Dieta Invertida</button><button class="filter" data-filter="teste" aria-pressed="false">Diagnóstico</button></div><label class="search"><svg viewBox="0 0 24 24" class="icon" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg><input type="search" id="search" aria-label="Buscar criativo" placeholder="Buscar por nome ou código" autocomplete="off"></label></div><p class="list-status" id="list-status" role="status" aria-live="polite">20 criativos · 51 versões atuais</p><div id="creative-list"></div><p class="empty" id="empty" hidden>Nenhum criativo encontrado. Tente outro nome ou filtro.</p>
 </div></main>
 <footer><div class="wrap"><p><strong>MAYA / ACERVO CRIATIVO</strong><br>Versões atuais em destaque. Revisões anteriores preservadas para comparação.</p><p><a href="#topo">Voltar ao início ↑</a><br>Catálogo atualizado em 15 de setembro de 2026.</p></div></footer>
 <div id="toast" class="toast" role="status" hidden></div><dialog class="dialog" id="viewer" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title"></h2><button class="dialog-close" aria-label="Fechar vídeo">×</button></div><div class="dialog-body"><video class="dialog-video" id="dialog-video" playsinline controls preload="none"></video><div class="dialog-info"><span class="dialog-tag" id="dialog-tag"></span><p id="dialog-description"></p><div class="tabs" id="dialog-tabs" role="group" aria-label="Legenda da revisão anterior"></div><a class="btn dark" id="dialog-download" download>Baixar arquivo ↓</a><a class="btn" id="dialog-original" target="_blank" rel="noopener">Abrir original em outra aba ↗</a><p class="dialog-error" id="dialog-error" hidden>Não foi possível carregar o vídeo. Tente baixar o arquivo ou abrir o link novamente.</p></div></div></dialog>
@@ -154,7 +154,8 @@
           }
         ],
         "original": "Como acabar com vontade de doce?\nTem uma estratégia que te ajuda a acabar com vontade de doce.\nJejum metabólico.\nJá fez jejum metabólico?\nMas jejum não é esse jejum que você faz não, tá?\nEsse jejum que você faz é o jejum errado.\nÉ o jejum metabólico.\nTem uma estratégia de jejum metabólico que em 7 dias você consegue perder uns 5 quilos.\nOlha só o que aconteceu aqui com essa mulher que aplicou em 7 dias e teve esse resultado.\nE vai acabar com vontade de doce.\nTopa participar de um desafio do jejum comigo?\nO mesmo desafio que ela participou?\nE nesse desafio de jejum eu vou montar sua dieta com tabela de substituição.\nDieta específica para o seu metabolismo.\nO que pode, o que não pode comer. O horário.\nE eu vou ser o seu médico durante 7 dias e ainda vou fazer uma análise da sua saúde e emitir um diagnóstico médico da sua saúde.\nTopa participar desse desafio para acabar com vontade de doce e perder peso?\nEntão clica aqui em saiba mais.\nSó clicar aqui embaixo e eu te vejo no desafio do jejum.\nVai ser surreal."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M02",
@@ -312,7 +313,8 @@
           }
         ],
         "original": "Jejum intermitente. Essas são as regras.\nVocê come uma janela menor de tempo.\nSeis horas, oito horas, dez horas.\nO restante do tempo você está jejuando.\nE seu corpo pensa, socorro, não tem nenhum carboidrato aqui pra gente consumir.\nE logo ele responde, fica tranquila, olha o tanto de gordura que tem aqui.\nVamos consumir gordura.\nÉ diferente de dieta porque não tem efeito sanfona, engorda, emagrece.\nPorque você pode comer o que você gosta, só que numa janela específica de tempo.\nEu tenho o meu próprio protocolo de jejum intermitente.\nSuper simples. Você vai saber o que comer, quanto comer, quando comer.\nE nele você vai entender porque você está super feliz mesmo fazendo jejum.\nFaz o teste, veja se o jejum é pra você e eu te garanto que você vai sentir a diferença."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M03",
@@ -420,7 +422,8 @@
           }
         ],
         "original": "Jejum intermitente, sim ou não? Vamos lá?\nJejum queima músculo? Não.\nJejum queima gordura abdominal? Sim.\nJejum dá flacidez? Não.\nJejum acelera o metabolismo? Sim.\nJejum diminui a celulite? Sim.\nJejum pode depois dos 40? Com certeza.\nJejum passa fome? Não, com o protocolo certo.\nDá pra comer doce fazendo jejum? Sim.\nCafé preto quebra o jejum? Não.\nJejum serve pra todo mundo? Não, e esse ponto é muito importante e eu vou te explicar.\nSe você aplicar um protocolo de jejum enquanto você dorme, vai ser a hora que seu corpo vai começar a trabalhar.\nA insulina fica baixa, o seu metabolismo usa a gordura como combustível e o mais interessante é que isso não é só o jejum.\nIsso acontece toda noite com qualquer pessoa, mas com o jejum a gente faz com que isso se intensifique.\nEntão o seu corpo queima de duas a três vezes mais gordura sem você precisar sair de casa, sem academia, sem personal, sem equipamento.\nMas pra cada corpo existe uma janela de jejum específica, baseado no seu metabolismo.\nPois tem casos que o corpo não se encontra no momento certo pra fazer jejum.\nOu até se encontra, mas se feito da maneira errada, ele pode aumentar a sua fome, a vontade de comer doces, alimentos mais palatáveis e o resultado mais gordura no seu bucho.\nE o resultado mais gordura no seu abdômen.\nMas Thalita, como eu vou descobrir se meu corpo tá no momento certo de fazer jejum?\nIsso é muito simples e eu vou te ajudar agora.\nEu criei um teste gratuito.\nVocê responde algumas perguntas sobre o seu corpo e descobre se o seu metabolismo já está pronto pra ativar a queima de gordura através do jejum.\nConsiderando sua idade, seu peso e o seu biotipo.\nSe você tiver curiosidade pra saber se seu corpo ainda aceita fazer o jejum, clica no botão aqui embaixo e faz o teste agora.\nO resultado sai na hora e é 100% gratuito."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M04",
@@ -528,7 +531,8 @@
           }
         ],
         "original": "Thalita, posso tomar água com sal no jejum? Sim, principalmente nos jejuns mais longos.\nEnjoo durante o jejum, é sinal de que está funcionando? Está fazendo o protocolo errado.\nMulher na menopausa, pode fazer jejum? Sim, excelente, inclusive, para perder aquela gordura na região abdominal teimosa da menopausa.\nO jejum funciona sem precisar de academia? Sim, o corpo queima gordura independente do exercício.\nPosso usar o mesmo horário de jejum todos os dias? Não, eu prefiro usar o ciclo circadiano e respeitar o seu corpo.\nEntão como que eu sei qual que é a janela certa para o meu corpo?\nEssa pergunta é que muda tudo e a resposta está no que poucas pessoas sabem sobre o seu próprio metabolismo.\nJejum não é para todo mundo porque cada corpo está num momento hormonal diferente.\nA mulher de 30 anos com metabolismo acelerado responde diferente da mulher de 45 com resistência à insulina.\nA janela certa de jejum para uma pode ser exatamente o que vai travar o resultado da outra.\nE é por isso que copiar o protocolo da internet quase nunca funciona.\nO que funciona é entender o que está acontecendo dentro do seu próprio corpo e ajustar o protocolo para a sua idade, seu biotipo, seu momento hormonal.\nCom o protocolo certo, o jejum faz o seu corpo queimar de duas a três vezes mais gordura.\nSem cortar o que você gosta de comer, sem passar fome.\nE sabe o melhor de tudo. O processo de emagrecimento é enquanto você dorme.\nOk, mas se eu preciso saber exatamente como está meu metabolismo para fazer jejum, mas eu não faço ideia de como ele está. O que eu faço, Thalita?\nCalma que eu vou te ajudar a descobrir.\nPara te ajudar com isso, eu estou disponibilizando um diagnóstico gratuito.\nVocê clica aqui nesse botão, responde algumas perguntas e ele te mostra se o seu metabolismo está pronto para ativar a queima de gordura através do jejum intermitente.\nHoje, o resultado sai na hora.\nPersonalizado para a sua idade, seu peso e seu biotipo não custa nada.\nE se der positivo, você descobre uma nova oportunidade para emagrecer.\nEntão não tem por que você não fazer.\nE se der positivo, ele ainda te ajuda a traçar o seu plano de ação para você começar hoje mesmo.\nMas eu vou ter que passar fome? Não.\nMas vou ter que encontrar o protocolo certo? Mas será que o jejum funciona para mim? Não sei.\nO teste vai ser para você descobrir isso.\nEm dois minutos você descobre. De graça e o resultado sai na hora.\nEntão clica no botão aqui embaixo e faz o máximo que vai acontecer. Você vai descobrir que o seu corpo não aceita o jejum agora. E vai ter que procurar outro método para emagrecer."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M05",
@@ -597,7 +601,8 @@
           }
         ],
         "original": "Eu fiz o meu teste de idade metabólica e olha isso aqui.\nEu tenho 36 anos de idade e é minha idade metabólica de um jovenzinho de 28 anos de idade.\nVocê já fez seu teste?\nPor exemplo, olha essa outra aluna aqui.\nEla fez o teste acima do peso, cheio de sintoma.\nUma idade metabólica de mais de 80 anos.\nDá para você fazer seu teste.\nEstá curiosa para saber qual é a sua idade metabólica?\nSó você clicar aqui, clica aqui e faz o teste.\nO teste é gratuito, muito legal.\nPorque isso é uma análise a partir dos seus sintomas.\nQue vale muito mais do que o que você tem aí de idade na sua carteira de identidade."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M06",
@@ -676,7 +681,8 @@
           }
         ],
         "original": "Olha só o caso dessa aluna, ela fez esse teste e ela descobriu que ela está no nível 6 de metabolismo lento e a idade metabólica dela é muito mais alta do que a idade real.\nEntão olha só, se você está no nível 3 de metabolismo lento, você está 4 anos mais velha e seu metabolismo vai estar 20% abaixo.\nSe você está no nível 4 de metabolismo lento, você vai estar 8 anos mais velha do que a sua idade real e o seu metabolismo vai estar 30% abaixo.\nSe você está no nível 5 de metabolismo lento, você vai estar 13 anos mais velha que a sua idade real e seu metabolismo cai uns 40%.\nE se você está no nível 6 de metabolismo lento, você vai estar uns 18 anos mais velha que a sua idade real e o seu metabolismo cai uns 50%.\nComo que você faz esse teste de idade metabólica do seu metabolismo?\nSó você clicar aqui embaixo em saiba mais e fazer o seu teste para você descobrir o seu."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M07",
@@ -754,7 +760,8 @@
           }
         ],
         "original": "Elas não iam para a academia? Então, como elas ficavam magras?\nNinguém tem coragem de te falar, mas você não precisa de academia para perder peso.\nTrês estratégias para você perder peso rápido, sem precisar disso aqui.\nPrimeira estratégia, beber 500ml de água a cada duas horas ativa em até 30% o seu metabolismo.\nSegunda estratégia, mulher que tem barriga e tem resistência insulínica.\nSe você diminuir açúcar, carboidrato simples e passar a tomar vinagre de maçã antes do almoço e jantar, vai diminuir até 50% o pico de insulina e você vai perder peso mais rápido.\nE a terceira coisa mais poderosa do que todas juntas, jejum intermitente metabólico.\nEssa estratégia você consegue perder em torno de 5kg em 7 dias.\nTopa participar de um desafio do jejum comigo?\nE eu vou ser o seu médico, vou montar a sua dieta específica para o seu metabolismo, com tabela de substituição que você pode comer ou que você não pode comer.\nEm uma semana você vai conseguir perder em média 5kg em 7 dias.\nE o que eu faria para você perder uns 5kg em 7 dias?\nTe colocaria dentro dessa plataforma do desafio do jejum, com todas as aulas, todos os materiais, todas as dietas, chás para a saúde, para o metabolismo, tudo completo para você perder uns 5kg em 7 dias, dieta desenvolvida para o seu metabolismo.\nE aqui temos todas as pílulas de mentalidade e temos os e-books extras, bônus para você, de tireoide, de creatina, sucos medicinais, café termogênico, fibras, doces, farinhas especiais, receitas de pães, com baixos carboidratos e suplementação completa para você ter mais saúde.\nTudo no nosso desafio do jejum.\nMulheres que entraram no último desafio perderam até 7kg na primeira semana.\nEntão você precisa só desse valor por mês ou R$67 a vista.\nEu vou te passar todo esse protocolo e você vai perder até 5kg em 7 dias.\nE eu vou analisar a sua saúde.\nEntão é só clicar em saiba mais aqui e te vejo no jejum.\nOlha só, mas o seu acesso a tudo isso nessas condições é só hoje, tá?\nEntão clica aqui em saiba mais, porque amanhã vai estar mais caro.\nVai ser surreal, mas faz só agora que esse vídeo não vai mais aparecer para você."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M08",
@@ -832,7 +839,8 @@
           }
         ],
         "original": "Você sabia que além de fazer boas escolhas, nós temos que saber também a ordem certa dessa primeira refeição?\nNão comece pelas frutas, em hipótese alguma. Comece sempre pela proteína, pelo salgado.\nDepois, então, você vem para as frutas que são fibras e, por último, se sobrar um espaço aí, você vem para o carboidrato.\nThalita, fazendo isso, eu consigo eliminar essa barriga que tanto me incomoda? A resposta é não.\nEssa é uma das estratégias para destravar o nosso corpo dessa crise hormonal que ele está.\nLembra, na menopausa, no climatério, começou o quê? Cai progesterona, estradiol.\nE junto com isso, veio uma bagunça nos outros hormônios. Cortisol, melatonina, grelina, leptina, insulina.\nE o nosso corpo trava e ele não consegue mais buscar energia nesse depósito de gordura que você tem, principalmente no abdômen.\nE como que faz, então, para eliminar essa gordura?\nVocê precisa parar de mandar combustível para a sua barriga, principalmente o combustível errado.\nE existe uma estratégia milenar já validada pela ciência há milhares de anos que faz com que o nosso corpo receba o comando novamente de buscar energia nessa gordura que está acumulada, principalmente na sua barriga.\nE eu estou falando, sim, do jejum intermitente.\nMas não é qualquer jejum intermitente, porque você está com o corpo travado pela falta de hormônios.\nEntão agora é o momento de, primeiro, reequilibrar, regular esses hormônios através da alimentação.\nEntão na janela de alimentação você precisa saber o que comer, a ordem, a quantidade, principalmente de proteína.\nOlha só, eu preparei com muito cuidado um questionário para você responder e diante das suas respostas eu posso te mandar o meu protocolo de jejum intermitente de acordo com as suas necessidades.\nEntão clica em Saiba Mais para você responder esse questionário, não leva nem três minutinhos para você conseguir eliminar de vez essa barriga que tanto te incomoda através da estratégia milenar validada pela ciência que dá super certo sim, que de quebra você ainda vai aprender o que comer.\nEntão é só clicar em Saiba Mais para você não perder essa oportunidade."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M09",
@@ -899,7 +907,8 @@
           }
         ],
         "original": "Esse tipo de comentário que eu recebi hoje depois da aula, só que o problema é que eu fiquei com uma dúvida, sabe?\nPor que que essas mulheres conseguem perder uns 5 quilos em média em 5, 7 dias e você paga a consulta, você vai médico, você vai nutre, você gasta dinheiro com dieta cara e não consegue ter um resultado desse em 2 meses de tratamento?\nPorque uma das desculpas que vocês utilizam é falar assim, ah, ela foi provavelmente no médico mais caro.\nDepois de muito pensar eu entendi o porquê, porque você vai nesses profissionais e você faz uma única dieta que você segue ali por 2 meses.\nSabe o que que ela fez? Uma dieta diferente por dia durante 5, 7 dias e o que que isso vai fazer com o metabolismo?\nAtiva o metabolismo, regula muitos hormônios que influenciam na sua dificuldade de perder peso.\nVocê fazer uma dieta diferente todo dia, o que que isso faz no seu metabolismo?\nIsso causa choques metabólicos, então vai otimizar a tireoide, melhora sono, melhora intestino, melhora energia, melhora disposição e daí seu emagrecimento acelera sem precisar de atividade física.\nTopa fazer um teste? E só 5 reais pra você ter um resultado assim?\nAliás, teste não, porque se você fizer eu garanto que você vai ter resultado.\nÉ um desafio de jejum. Em uma semana você perde uns 5 quilos.\nEu vou ser seu médico, você vai ter uma análise médica da sua saúde, dieta pra você desenhada especificamente pro seu metabolismo com tabela de substituição, o que você pode comer, o que não pode comer, tudo.\nEm uma semana você vai perder uns 5 quilos.\nE você tem 5 reais no mês? É o que você precisa pra entrar.\nEntão clica aqui em Saiba Mais, te vejo um desafio que vai ser surreal.\nMas faz só agora que esse vídeo não vai mais aparecer pra você."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M10",
@@ -1026,7 +1035,8 @@
           }
         ],
         "original": "Deixa eu tirar uma dúvida aqui com vocês, gente. Eu tô sem comer doce, né? Eu tô sentindo que eu tô com muita fome.\nComo acabar com vontade de doce?\nTem uma estratégia que te ajuda a acabar com vontade de doce.\nJejum metabólico.\nJá fez jejum metabólico?\nMas jejum não é esse jejum que você faz não, tá?\nEsse jejum que você faz é o jejum errado.\nÉ o jejum metabólico.\nTem uma estratégia de jejum metabólico que em 7 dias você consegue perder uns 5 quilos.\nOlha só o que aconteceu aqui com essa mulher que aplicou em 7 dias e teve esse resultado.\nE vai acabar com vontade de doce.\nTopa participar de um desafio do jejum comigo?\nO mesmo desafio que ela participou?\nE nesse desafio de jejum eu vou montar sua dieta com tabela de substituição.\nDieta específica para o seu metabolismo.\nO que pode, o que não pode comer. O horário.\nE eu vou ser o seu médico durante 7 dias e ainda vou fazer uma análise da sua saúde e emitir um diagnóstico médico da sua saúde.\nTopa participar desse desafio para acabar com vontade de doce e perder peso?\nEntão clica aqui em saiba mais.\nSó clicar aqui embaixo e eu te vejo no desafio do jejum.\nVai ser surreal."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M11",
@@ -1074,7 +1084,8 @@
           }
         ],
         "original": ""
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M12",
@@ -1143,7 +1154,8 @@
           }
         ],
         "original": ""
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M13",
@@ -1212,7 +1224,8 @@
           }
         ],
         "original": ""
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M14",
@@ -1300,7 +1313,8 @@
           }
         ],
         "original": "Eu como metade do que você come, e quem engorda sou eu.\nAmor, tá pronta? Vamos!\nVai você, eu não tô me sentindo bem.\nMãe, por que você nunca aparece nas fotos da família?\nEu prefiro tirar as fotos, filha.\nSandra, o que você fez? Eu já tentei de tudo e nada funciona.\nMárcia, não era você que falhava, era sua insulina trancando sua gordura.\nA minha também tava trancada.\nO que você tá fazendo, mãe?\nMeu segredo da insulina, filha. A Sandra me mostrou onde pegar a receita.\nUau! Você está linda!\nVamos, amor, estou pronta.\nMãe, vem! Aqui na frente!\nDessa vez eu vou aparecer.\nMárcia, você está ótima!\nO que você fez?\nEu descobri o que estava me atrapalhando.\nVou te mandar o link, mas não sei se a doutora Juliana vai deixar por muito tempo.\nNossa, vou ver agora!\nClica aqui embaixo que eu monto o segredo da insulina certo pra você.\nMárcia, você está ótima!\nLegenda por Sônia Ruberti"
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M15",
@@ -1388,7 +1402,8 @@
           }
         ],
         "original": "Gancho do anunciante: A gordura no fígado não dói, não avisa, vai destruindo por dentro, até virar cirrose."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M16",
@@ -1477,7 +1492,8 @@
           }
         ],
         "original": "Gancho do anunciante: Gente, eu eliminei toda a minha gordura do fígado só com o chá que a Nutri me passou. O que eu não sabia é que ele também emagrecia, e em menos de duas semanas eu já perdi 5 quilos."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M17",
@@ -1568,7 +1584,8 @@
           }
         ],
         "original": "Gancho do anunciante: Tome isso à noite e a gordura teimosa do fígado vai desaparecer, vai secar sua pochete e acabar com o seu estômago alto."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M18",
@@ -1658,7 +1675,8 @@
           }
         ],
         "original": "Gancho do anunciante: As pessoas usam errado o abacate para curar a diabetes."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M19",
@@ -1746,7 +1764,8 @@
           }
         ],
         "original": "Gancho do anunciante: Faça esse glifage natural, se quiser curar a diabetes."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M20",
@@ -1837,13 +1856,13 @@
           }
         ],
         "original": "Gancho do anunciante: É isso que acontece quando alguém com doença hepática crônica me toma por 30 dias."
-      }
+      },
+      "quiz": "qc"
     },
     {
       "id": "M02-qh",
-      "tab": "funis",
       "title": "Hábitos Japoneses · /qh",
-      "description": "O M02 Dieta (o anúncio #5, vencedor do F002) com o nome do chiclete do quiz /qh: \"Hábitos Japoneses\" no lugar de \"Dieta Invertida\" e o convite final para descobrir o nível. Corpo, gancho e edição iguais. Variações de gancho no mesmo corpo (mesmo conjunto): D3 do M02, A e C do M14.",
+      "description": "O M02 Dieta (o anúncio #5, vencedor do F002) com o nome do chiclete do quiz /qh: \"Hábitos Japoneses\" no lugar de \"Dieta Invertida\" e o convite final para descobrir o nível. Corpo, gancho e edição iguais. Variação de gancho no mesmo corpo (mesmo conjunto): D3 do M02.",
       "color": "red",
       "original": "https://launchxsales.github.io/maya-ads/originais/m02/video.mp4",
       "originalPage": "https://launchxsales.github.io/maya-ads/originais/m02/",
@@ -1876,36 +1895,6 @@
           "poster": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qh-D3-poster.jpg",
           "captioned": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qh-D3-legenda.mp4",
           "clean": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qh-D3-sem-legenda.mp4"
-        },
-        {
-          "id": "M02-qh-M14A",
-          "kind": "dieta",
-          "title": "Hábitos Japoneses · gancho A do M14",
-          "version": "V1 · 21/10 · a 1ª cena do M14 (anúncio #34, vendeu): a Márcia no jantar em família, em animação 3D na frente do corpo M02-qh",
-          "duration": "0:52",
-          "sizes": {
-            "captioned": 14.7,
-            "clean": 14.1
-          },
-          "poster": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qh-M14A-poster.jpg",
-          "captioned": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qh-M14A-legenda.mp4",
-          "clean": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qh-M14A-sem-legenda.mp4",
-          "hold": "gancho de animação 3D colado em corpo UGC: quebra visual (decisão de 21/10)"
-        },
-        {
-          "id": "M02-qh-M14C",
-          "kind": "dieta",
-          "title": "Hábitos Japoneses · gancho C do M14",
-          "version": "V1 · 21/10 · a cena da Sandra do M14-jantar-c (anúncio #36, vendeu), em animação 3D na frente do corpo M02-qh",
-          "duration": "0:52",
-          "sizes": {
-            "captioned": 14.9,
-            "clean": 14.4
-          },
-          "poster": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qh-M14C-poster.jpg",
-          "captioned": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qh-M14C-legenda.mp4",
-          "clean": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qh-M14C-sem-legenda.mp4",
-          "hold": "gancho de animação 3D colado em corpo UGC: quebra visual (decisão de 21/10)"
         }
       ],
       "history": [],
@@ -1931,26 +1920,16 @@
             "id": "M02-qh-D3",
             "title": "Hábitos Japoneses · gancho D3",
             "text": "Qual é o primeiro alimento que vai no seu prato? Olha isso. Hábitos Japoneses.\n\nEssas são as regras. Você come na ordem invertida. Primeiro o vegetal, depois a proteína, o carboidrato por último.\n\nO restante é igual: você come o que gosta. E seu corpo pensa, opa, cadê o pico de açúcar que vinha sempre primeiro?\n\nE logo ele responde, fica tranquila, olha o tanto de gordura que tem aqui.\n\nVamos consumir gordura. É diferente das outras dietas porque não tem efeito sanfona, engorda, emagrece.\n\nPorque você pode comer o que você gosta, só que numa ordem específica.\n\nEu tenho o meu próprio protocolo dos hábitos japoneses. Super simples.\n\nVocê vai saber o que comer, quanto comer, quando comer. E nele você vai entender porque você está super feliz mesmo fazendo os hábitos japoneses.\n\nDescubra o seu nível, veja se o protocolo é pra você e eu te garanto que você vai sentir a diferença."
-          },
-          {
-            "id": "M02-qh-M14A",
-            "title": "Hábitos Japoneses · gancho A do M14",
-            "text": "Eu como metade do que você come, e quem engorda sou eu. Hábitos Japoneses.\n\nEssas são as regras. Você come na ordem invertida. Primeiro o vegetal, depois a proteína, o carboidrato por último.\n\nO restante é igual: você come o que gosta. E seu corpo pensa, opa, cadê o pico de açúcar que vinha sempre primeiro?\n\nE logo ele responde, fica tranquila, olha o tanto de gordura que tem aqui.\n\nVamos consumir gordura. É diferente das outras dietas porque não tem efeito sanfona, engorda, emagrece.\n\nPorque você pode comer o que você gosta, só que numa ordem específica.\n\nEu tenho o meu próprio protocolo dos hábitos japoneses. Super simples.\n\nVocê vai saber o que comer, quanto comer, quando comer. E nele você vai entender porque você está super feliz mesmo fazendo os hábitos japoneses.\n\nDescubra o seu nível, veja se o protocolo é pra você e eu te garanto que você vai sentir a diferença."
-          },
-          {
-            "id": "M02-qh-M14C",
-            "title": "Hábitos Japoneses · gancho C do M14",
-            "text": "Sandra, o que você fez? Eu já tentei de tudo e nada funciona.\n\nHábitos Japoneses. Essas são as regras. Você come na ordem invertida.\n\nPrimeiro o vegetal, depois a proteína, o carboidrato por último.\n\nO restante é igual: você come o que gosta. E seu corpo pensa, opa, cadê o pico de açúcar que vinha sempre primeiro?\n\nE logo ele responde, fica tranquila, olha o tanto de gordura que tem aqui.\n\nVamos consumir gordura. É diferente das outras dietas porque não tem efeito sanfona, engorda, emagrece.\n\nPorque você pode comer o que você gosta, só que numa ordem específica.\n\nEu tenho o meu próprio protocolo dos hábitos japoneses. Super simples.\n\nVocê vai saber o que comer, quanto comer, quando comer. E nele você vai entender porque você está super feliz mesmo fazendo os hábitos japoneses.\n\nDescubra o seu nível, veja se o protocolo é pra você e eu te garanto que você vai sentir a diferença."
           }
         ],
         "original": ""
-      }
+      },
+      "quiz": "qh"
     },
     {
       "id": "M02-qb",
-      "tab": "funis",
       "title": "Barriga das 18h · /qb",
-      "description": "O M02 Dieta (o anúncio #5, vencedor do F002) com o nome do chiclete do quiz /qb: abre com \"Barriga das 18h?\", o protocolo é \"pra barriga das 18h\" e o convite final é para descobrir o nível. Corpo e edição iguais. Variações de gancho no mesmo corpo (mesmo conjunto): D3 do M02, A e C do M14.",
+      "description": "O M02 Dieta (o anúncio #5, vencedor do F002) com o nome do chiclete do quiz /qb: abre com \"Barriga das 18h?\", o protocolo é \"pra barriga das 18h\" e o convite final é para descobrir o nível. Corpo e edição iguais. Variação de gancho no mesmo corpo (mesmo conjunto): D3 do M02.",
       "color": "red",
       "original": "https://launchxsales.github.io/maya-ads/originais/m02/video.mp4",
       "originalPage": "https://launchxsales.github.io/maya-ads/originais/m02/",
@@ -1983,36 +1962,6 @@
           "poster": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qb-D3-poster.jpg",
           "captioned": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qb-D3-legenda.mp4",
           "clean": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qb-D3-sem-legenda.mp4"
-        },
-        {
-          "id": "M02-qb-M14A",
-          "kind": "dieta",
-          "title": "Barriga das 18h · gancho A do M14",
-          "version": "V1 · 21/10 · a 1ª cena do M14 (anúncio #34, vendeu): a Márcia no jantar em família, em animação 3D na frente do corpo M02-qb",
-          "duration": "0:52",
-          "sizes": {
-            "captioned": 14.8,
-            "clean": 14.3
-          },
-          "poster": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qb-M14A-poster.jpg",
-          "captioned": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qb-M14A-legenda.mp4",
-          "clean": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qb-M14A-sem-legenda.mp4",
-          "hold": "gancho de animação 3D colado em corpo UGC: quebra visual (decisão de 21/10)"
-        },
-        {
-          "id": "M02-qb-M14C",
-          "kind": "dieta",
-          "title": "Barriga das 18h · gancho C do M14",
-          "version": "V1 · 21/10 · a cena da Sandra do M14-jantar-c (anúncio #36, vendeu), em animação 3D na frente do corpo M02-qb",
-          "duration": "0:52",
-          "sizes": {
-            "captioned": 15.0,
-            "clean": 14.6
-          },
-          "poster": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qb-M14C-poster.jpg",
-          "captioned": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qb-M14C-legenda.mp4",
-          "clean": "https://launchxsales.github.io/maya-ads/upgrade-set15/m02-chicletes/M02-qb-M14C-sem-legenda.mp4",
-          "hold": "gancho de animação 3D colado em corpo UGC: quebra visual (decisão de 21/10)"
         }
       ],
       "history": [],
@@ -2038,20 +1987,11 @@
             "id": "M02-qb-D3",
             "title": "Barriga das 18h · gancho D3",
             "text": "Qual é o primeiro alimento que vai no seu prato? Olha isso. Barriga das 18h?\n\nEssas são as regras. Você come na ordem invertida. Primeiro o vegetal, depois a proteína, o carboidrato por último.\n\nO restante é igual: você come o que gosta. E seu corpo pensa, opa, cadê o pico de açúcar que vinha sempre primeiro?\n\nE logo ele responde, fica tranquila, olha o tanto de gordura que tem aqui.\n\nVamos consumir gordura. É diferente das outras dietas porque não tem efeito sanfona, engorda, emagrece.\n\nPorque você pode comer o que você gosta, só que numa ordem específica.\n\nEu tenho o meu próprio protocolo pra barriga das 18h. Super simples.\n\nVocê vai saber o que comer, quanto comer, quando comer. E nele você vai entender porque você está super feliz mesmo fazendo a ordem do prato.\n\nDescubra o seu nível, veja se o protocolo é pra você e eu te garanto que você vai sentir a diferença."
-          },
-          {
-            "id": "M02-qb-M14A",
-            "title": "Barriga das 18h · gancho A do M14",
-            "text": "Eu como metade do que você come, e quem engorda sou eu. Barriga das 18h?\n\nEssas são as regras. Você come na ordem invertida. Primeiro o vegetal, depois a proteína, o carboidrato por último.\n\nO restante é igual: você come o que gosta. E seu corpo pensa, opa, cadê o pico de açúcar que vinha sempre primeiro?\n\nE logo ele responde, fica tranquila, olha o tanto de gordura que tem aqui.\n\nVamos consumir gordura. É diferente das outras dietas porque não tem efeito sanfona, engorda, emagrece.\n\nPorque você pode comer o que você gosta, só que numa ordem específica.\n\nEu tenho o meu próprio protocolo pra barriga das 18h. Super simples.\n\nVocê vai saber o que comer, quanto comer, quando comer. E nele você vai entender porque você está super feliz mesmo fazendo a ordem do prato.\n\nDescubra o seu nível, veja se o protocolo é pra você e eu te garanto que você vai sentir a diferença."
-          },
-          {
-            "id": "M02-qb-M14C",
-            "title": "Barriga das 18h · gancho C do M14",
-            "text": "Sandra, o que você fez? Eu já tentei de tudo e nada funciona.\n\nBarriga das 18h? Essas são as regras. Você come na ordem invertida.\n\nPrimeiro o vegetal, depois a proteína, o carboidrato por último.\n\nO restante é igual: você come o que gosta. E seu corpo pensa, opa, cadê o pico de açúcar que vinha sempre primeiro?\n\nE logo ele responde, fica tranquila, olha o tanto de gordura que tem aqui.\n\nVamos consumir gordura. É diferente das outras dietas porque não tem efeito sanfona, engorda, emagrece.\n\nPorque você pode comer o que você gosta, só que numa ordem específica.\n\nEu tenho o meu próprio protocolo pra barriga das 18h. Super simples.\n\nVocê vai saber o que comer, quanto comer, quando comer. E nele você vai entender porque você está super feliz mesmo fazendo a ordem do prato.\n\nDescubra o seu nível, veja se o protocolo é pra você e eu te garanto que você vai sentir a diferença."
           }
         ],
         "original": ""
-      }
+      },
+      "quiz": "qb"
     }
   ],
   "finance": {
@@ -2468,7 +2408,7 @@
 const DATA=JSON.parse(document.getElementById('catalog-data').textContent),CREATIVES=DATA.creatives;
 const $=s=>document.querySelector(s),all=s=>[...document.querySelectorAll(s)];const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const playIcon='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m7 3 15 9-15 9z"/></svg>',downloadIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg>';
-let filter='all',term='',tab='main',toastTimer,dialogEntry=null,dialogMode='captioned';const cards=new Map(),alias=new Map();
+let filter='all',term='',tab='all',toastTimer,dialogEntry=null,dialogMode='captioned';const cards=new Map(),alias=new Map();
 function currentLabel(mode){return mode==='captioned'?'com legenda':'sem legenda'}
 function usd(n){return 'US$ '+Number(n).toFixed(2).replace('.',',')}
 function costBlock(c){const v=c.cost;if(!v)return '';return `<div class="creative-cost"><strong>≈ ${usd(v.total_estimate)}</strong><span>Produção + ajustes · ${c.id}<small>Todas as versões deste criativo. Testes separados no topo.</small></span><details><summary>Detalhar plataformas</summary><p>fal.ai: ${usd(v.fal)}<br>OpenRouter: ${usd(v.openrouter)} (inclui rateio de conferência)<br>ElevenLabs: ${Math.round(v.eleven_credits)} créditos · ≈ ${usd(v.eleven_estimate)}<br>Palmier / edição local / GitHub: sem cobrança incremental</p></details></div>`}
@@ -2484,7 +2424,7 @@ function makeCard(g,c){const id=g.versions[0].id,v0=g.versions[0];
   const verSw=g.versions.length>1?switcher('version','Versão',g.versions.map((x,i)=>`<button data-version="${i}" aria-pressed="${i===0}">${shortVersion(x)}</button>`).join('')):'';
   const voiceSw=pv?switcher('voice','Voz','<button data-voice="new" aria-pressed="true">Nova</button><button data-voice="old" aria-pressed="false">Anterior</button>')+'<span class="voice-hint">Nova: a interpretação da atriz do original convertida para a Maya (Voice Changer do ElevenLabs). Anterior: locução montada por TTS.</span>':'';
   const capSw=switcher('caption','Legenda','<button data-mode="captioned" aria-pressed="true">Com legenda</button><button data-mode="clean" aria-pressed="false">Sem legenda</button>');
-  return `<article class="card" id="${id}" data-kind="${g.kind}"><header class="card-head"><div><h3>${g.title}</h3>${v0.hold?`<span class="hold">NÃO SUBIR · ${v0.hold}</span>`:''}<span class="version">${v0.version} · revisão de 15 set.</span></div><span class="duration">${v0.duration}</span></header><div class="video-stage"><video controls playsinline preload="none" poster="${v0.poster}" src="${v0.captioned}" aria-label="${c.id} ${g.title}, ${v0.version}, com legenda"></video><button class="start-play" aria-label="Reproduzir ${c.id} ${g.title}">${playIcon}</button></div><p class="error-message" hidden>O vídeo não carregou. Você pode usar o botão de download abaixo.</p><div class="card-controls">${verSw}${voiceSw}${capSw}<a class="btn download" href="${v0.captioned}" download="${id}-legenda.mp4">${downloadIcon}<span>Baixar com legenda</span></a><div class="card-bottom"><span class="file-meta">MP4 · ${String(v0.sizes.captioned).replace('.',',')} MB</span><button class="copy-variant">Copiar link da versão</button></div></div></article>`}
+  return `<article class="card" id="${id}" data-kind="${g.kind}"><header class="card-head"><div><h3>${g.title}</h3><span class="version">${v0.version} · revisão de 15 set.</span></div><span class="duration">${v0.duration}</span></header><div class="video-stage"><video controls playsinline preload="none" poster="${v0.poster}" src="${v0.captioned}" aria-label="${c.id} ${g.title}, ${v0.version}, com legenda"></video><button class="start-play" aria-label="Reproduzir ${c.id} ${g.title}">${playIcon}</button></div><p class="error-message" hidden>O vídeo não carregou. Você pode usar o botão de download abaixo.</p><div class="card-controls">${verSw}${voiceSw}${capSw}<a class="btn download" href="${v0.captioned}" download="${id}-legenda.mp4">${downloadIcon}<span>Baixar com legenda</span></a><div class="card-bottom"><span class="file-meta">MP4 · ${String(v0.sizes.captioned).replace('.',',')} MB</span><button class="copy-variant">Copiar link da versão</button></div></div></article>`}
 $('#creative-list').innerHTML=CREATIVES.map(c=>`<section class="creative ${c.color}" id="${c.variants.length===1?c.id+'-creative':c.id}" aria-labelledby="title-${c.id}"><div class="section-head"><div class="section-title"><span class="number">${c.id}</span><div><h2 id="title-${c.id}">${c.title}</h2><p>${c.description}</p>${c.note?`<span class="note">${c.note}</span>`:''}</div></div>${c.scripts&&c.scripts.variants.length?`<button class="script-btn" type="button" data-script="${c.id}" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg>Roteiro</button>`:''}</div>${costBlock(c)}<div class="variants ${groupsOf(c).length===1?'two':''}">${makeOriginalCard(c)}${groupsOf(c).map(g=>makeCard(g,c)).join('')}</div><details class="history"><summary>Revisões anteriores <span style="margin-right:auto;color:#808080;font-weight:400">(${c.history.length})</span></summary><p class="history-intro">Versões substituídas durante a produção. Os ajustes mais recentes estão nos vídeos acima.</p><div class="history-list">${c.history.map((h,i)=>`<div class="history-row"><strong>${h.label}</strong><div class="history-actions">${h.captioned?`<button data-history="${c.id}:${i}" data-mode="captioned">Com legenda</button>`:''}${h.clean?`<button data-history="${c.id}:${i}" data-mode="clean">Sem legenda</button>`:''}</div></div>`).join('')}</div></details></section>`).join('');
 function pauseOthers(except){all('video').forEach(v=>{if(v!==except)v.pause()})}
 function toast(msg){$('#toast').textContent=msg;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,3400)}
@@ -2519,16 +2459,16 @@ function applyCard(id,change,load=true){const st=cards.get(id),card=document.get
 all('.card:not(.original-card)').forEach(card=>{const id=card.id,v=card.querySelector('video'),play=card.querySelector('.start-play');play.onclick=()=>{pauseOthers(v);v.play().catch(()=>{card.querySelector('.error-message').hidden=false})};v.addEventListener('play',()=>{pauseOthers(v);play.hidden=true});v.addEventListener('pause',()=>play.hidden=false);v.addEventListener('error',()=>{card.querySelector('.error-message').hidden=false});card.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(id,b.dataset.mode));card.querySelectorAll('[data-voice]').forEach(b=>b.onclick=()=>setVoice(id,b.dataset.voice));card.querySelectorAll('[data-version]').forEach(b=>b.onclick=()=>setVersion(id,b.dataset.version));card.querySelector('.copy-variant').onclick=()=>copy(catalogURL(curVersion(cards.get(id)).id+(cards.get(id).mode==='clean'?'--sem-legenda':'')))});
 all('.original-card').forEach(card=>{const v=card.querySelector('video'),play=card.querySelector('.start-play');play.onclick=()=>{pauseOthers(v);v.play().catch(()=>{card.querySelector('.error-message').hidden=false})};v.addEventListener('play',()=>{pauseOthers(v);play.hidden=true});v.addEventListener('pause',()=>play.hidden=false);v.addEventListener('error',()=>{card.querySelector('.error-message').hidden=false});card.querySelector('.copy-original').onclick=()=>copy(catalogURL(card.id))});
 function normalize(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
-function applyFilter(){let count=0,sections=0;CREATIVES.forEach(c=>{let shown=0;groupsOf(c).forEach(g=>{const txt=c.id+' '+c.title+' '+c.description+' '+g.title+' '+g.versions.map(v=>v.version).join(' ');const match=(c.tab||'main')===tab&&(filter==='all'||g.kind===filter)&&normalize(txt).includes(normalize(term));const card=document.getElementById(g.versions[0].id);card.hidden=!match;if(match){shown++;count+=g.versions.length}else card.querySelector('video').pause()});document.getElementById(c.variants.length===1?c.id+'-creative':c.id).hidden=!shown;if(shown)sections++});$('#list-status').textContent=sections+' criativo'+(sections!==1?'s':'')+' · '+count+' vers'+(count!==1?'ões':'ão')+' atu'+(count!==1?'ais':'al');$('#empty').hidden=count>0}
+function applyFilter(){let count=0,sections=0;CREATIVES.forEach(c=>{let shown=0;groupsOf(c).forEach(g=>{const txt=c.id+' '+c.title+' '+c.description+' '+g.title+' '+g.versions.map(v=>v.version).join(' ');const match=(tab==='all'||(c.quiz||'qc')===tab)&&(filter==='all'||g.kind===filter)&&normalize(txt).includes(normalize(term));const card=document.getElementById(g.versions[0].id);card.hidden=!match;if(match){shown++;count+=g.versions.length}else card.querySelector('video').pause()});document.getElementById(c.variants.length===1?c.id+'-creative':c.id).hidden=!shown;if(shown)sections++});$('#list-status').textContent=sections+' criativo'+(sections!==1?'s':'')+' · '+count+' vers'+(count!==1?'ões':'ão')+' atu'+(count!==1?'ais':'al');$('#empty').hidden=count>0;$('#empty').textContent=tab==='qt'?'Truque do Cravo: criativo próprio em planejamento.':'Nenhum criativo encontrado. Tente outro nome ou filtro.'}
 all('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;all('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));applyFilter()});$('#search').oninput=e=>{term=e.target.value;applyFilter()};all('.index-links a').forEach(a=>a.onclick=()=>{filter='all';term='';$('#search').value='';all('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.filter==='all')));applyFilter()});
 const dialog=$('#viewer'),dv=$('#dialog-video');function changeDialog(mode){dialogMode=mode;dv.src=dialogEntry[mode];const dl=$('#dialog-download');dl.href=dialogEntry[mode];dl.download=dialogEntry[mode].split('/').pop();dl.textContent='Baixar '+(dialogEntry.single?'arquivo':currentLabel(mode))+' ↓';all('#dialog-tabs button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));dv.load();dv.play().catch(()=>{})}
 function openViewer(entry,mode){pauseOthers(dv);dialogEntry=entry;$('#dialog-title').textContent=entry.title;$('#dialog-tag').textContent=entry.tag;$('#dialog-description').textContent=entry.description;$('#dialog-error').hidden=true;$('#dialog-original').hidden=!entry.originalPage;if(entry.originalPage)$('#dialog-original').href=entry.originalPage;$('#dialog-tabs').innerHTML=!entry.single&&entry.captioned&&entry.clean?'<button data-mode="captioned">Com legenda</button><button data-mode="clean">Sem legenda</button>':'';$('#dialog-tabs').hidden=!$('#dialog-tabs').children.length;all('#dialog-tabs button').forEach(b=>b.onclick=()=>changeDialog(b.dataset.mode));dialog.showModal();changeDialog(mode)}
 all('[data-original]').forEach(b=>b.onclick=()=>{const c=CREATIVES.find(x=>x.id===b.dataset.original);openViewer({title:c.id+' · Original de referência',tag:'Original',description:'Vídeo usado como referência para este criativo. Você pode assistir aqui ou baixar o arquivo.',captioned:c.original,single:true,originalPage:c.originalPage},'captioned')});
 all('[data-history]').forEach(b=>b.onclick=()=>{const [id,index]=b.dataset.history.split(':'),c=CREATIVES.find(x=>x.id===id),h=c.history[Number(index)];openViewer({...h,title:id+' · '+h.label,tag:'Revisão anterior',description:'Esta versão foi substituída durante a produção e está disponível para comparação. A versão atual fica no catálogo.',single:false},b.dataset.mode)});
 $('.dialog-close').onclick=()=>dialog.close();dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});dialog.addEventListener('close',()=>{dv.pause();dv.removeAttribute('src');dv.load()});dv.addEventListener('play',()=>pauseOthers(dv));dv.addEventListener('error',()=>{if(dv.getAttribute('src'))$('#dialog-error').hidden=false});
-function setTab(x){tab=x;all('[data-tab]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.tab===x)));all('.index-links a').forEach(a=>{const c=CREATIVES.find(y=>'#'+(y.variants.length===1?y.id+'-creative':y.id)===a.getAttribute('href'));a.hidden=((c&&c.tab)||'main')!==x});applyFilter()}
-all('[data-tab]').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));setTab('main');
-function followHash(){const h=decodeURIComponent(location.hash.slice(1)),vid=h.replace(/--sem-legenda$/,''),id=alias.get(vid);if(id){const ct=cards.get(id).creative.tab||'main';if(ct!==tab)setTab(ct);const st=cards.get(id),vi=st.versions.findIndex(v=>v.id===vid);if(vi>0)setVersion(id,vi);if(h.endsWith('--sem-legenda'))setMode(id,'clean',false);requestAnimationFrame(()=>document.getElementById(id).scrollIntoView({block:'start'}))}}window.addEventListener('hashchange',followHash);followHash();
+function setTab(x){tab=x;all('[data-tab]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.tab===x)));all('.index-links a').forEach(a=>{const c=CREATIVES.find(y=>'#'+(y.variants.length===1?y.id+'-creative':y.id)===a.getAttribute('href'));a.hidden=!(x==='all'||((c&&c.quiz)||'qc')===x)});applyFilter()}
+all('[data-tab]').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));setTab('all');
+function followHash(){const h=decodeURIComponent(location.hash.slice(1)),vid=h.replace(/--sem-legenda$/,''),id=alias.get(vid);if(id){const ct=cards.get(id).creative.quiz||'qc';if(tab!=='all'&&ct!==tab)setTab('all');const st=cards.get(id),vi=st.versions.findIndex(v=>v.id===vid);if(vi>0)setVersion(id,vi);if(h.endsWith('--sem-legenda'))setMode(id,'clean',false);requestAnimationFrame(()=>document.getElementById(id).scrollIntoView({block:'start'}))}}window.addEventListener('hashchange',followHash);followHash();
 
 const sdlg=$('#script-dialog');let scriptCreative=null,scriptIdx=0;
 function scriptHtml(t){return esc(t).replace(/^(Maya|Diego \(pergunta\)|Creator \(topo do react\)):/gm,'<b>$1:</b>')}
