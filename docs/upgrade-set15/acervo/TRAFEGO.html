@@ -1,0 +1,355 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Maya · Tráfego dos criativos</title><style>html{color-scheme:dark;scroll-behavior:smooth;scroll-padding-top:80px}
+:root{--ink:#fff;--paper:#000;--muted:#b3b3b3;--line:#333;--blue:#0A84FF;--red:#FF3B30;--yellow:#FFD60A;--orange:#ff812e;--green:#30D158;--surface:#111}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}button,input{font:inherit}button{cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.wrap{width:min(1240px,calc(100% - 80px));margin-inline:auto}
+.topline{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:12px}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;font-size:24px;font-weight:900;letter-spacing:-1px}
+.brand-mark{display:grid;grid-template-columns:8px 8px;gap:3px}.brand-mark i{width:8px;height:8px;background:var(--surface)}.brand-mark i:first-child{background:var(--blue)}.brand-mark i:last-child{background:var(--red)}
+.toplinks{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--ink);border-radius:4px;padding:12px 17px;background:var(--surface);color:var(--ink);text-decoration:none;font-weight:700;font-size:13px;line-height:1.25;min-height:43px}
+.btn:hover{background:#333}
+.hero{padding:57px 0 40px;display:grid;grid-template-columns:1fr 265px;align-items:end;gap:40px}
+.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;display:flex;align-items:center;gap:9px}
+.square{width:8px;height:8px;background:var(--red);display:inline-block}
+.hero h1{font-size:clamp(46px,6vw,82px);font-weight:850;letter-spacing:-4px;line-height:1.02;margin:22px 0}
+.hero h1 em{font-family:Georgia,'Times New Roman',serif;font-weight:400}
+.hero p{color:#9a9a9a;line-height:1.65;max-width:620px;font-size:16px;margin:0}
+.stats{padding:24px;background:var(--surface);position:relative}
+.stats:before{content:'';position:absolute;top:0;left:0;width:100%;height:5px;background:linear-gradient(90deg,var(--red) 0 25%,var(--blue) 25% 50%,var(--yellow) 50% 75%,var(--orange) 75%)}
+.stats-line{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid #393939}.stats-line:last-child{border:0;padding-bottom:0}
+.stats strong{font-size:37px;font-weight:800;letter-spacing:-2px}.stats span{font-size:12px;color:#c7c7c7}
+.indexbar{position:sticky;top:0;z-index:5;background:#000;border-bottom:1px solid var(--line);border-top:1px solid var(--line)}
+.tools{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;flex-wrap:wrap}
+.filters{display:flex;gap:7px;flex-wrap:wrap}
+.filter{border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:999px;padding:9px 14px;font-size:12px;font-weight:700;min-height:38px}
+.filter[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.search input{background:var(--surface);border:1px solid var(--line);color:var(--ink);border-radius:4px;padding:11px 14px;min-width:290px;font-size:13px}
+.list{padding:26px 0 10px}.list-status{color:var(--muted);font-size:12px;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{border:1px solid #333;border-radius:7px;overflow:hidden;background:#000;display:flex;flex-direction:column;scroll-margin-top:90px}
+.card-head{padding:14px 16px 12px;display:flex;flex-direction:column;gap:6px}
+.ids{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.code{font-weight:900;font-size:18px;letter-spacing:-.5px}.pos{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.badge{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px;border-radius:3px}
+.badge.l{background:var(--green);color:#000}.badge.t{background:var(--yellow);color:#000}
+.meta{font-size:11px;color:#8a8a8a}
+.frames{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#1a1a1a}
+.frames img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;background:#1a1a1a}
+.noimg{grid-column:1/-1;padding:40px 16px;text-align:center;color:#808080;font-size:12px}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:9px;flex:1}
+.tag{align-self:flex-start;font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--blue)}
+.hook{font-size:15px;line-height:1.5;margin:0;font-weight:700}
+.tela{font-size:12px;line-height:1.55;color:#c7c7c7;margin:0}.tela b{color:var(--ink)}
+.sig{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:2px}
+.sig div{padding:9px 4px;text-align:center;border-right:1px solid var(--line)}.sig div:last-child{border:0}
+.sig strong{display:block;font-size:17px;letter-spacing:-.5px}.sig span{font-size:9.5px;color:#8a8a8a;text-transform:uppercase;letter-spacing:.05em}
+.fmt,.am,.fim{font-size:11px;color:#8a8a8a;margin:0;line-height:1.5}.am{color:var(--orange)}
+.acts{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.acts .btn{min-height:38px;padding:9px 13px;font-size:12px}
+.lnk{font-size:12px;color:var(--muted);text-underline-offset:3px}
+.upcoming{margin:40px 0 44px;background:#1a1a1a;border:1px dashed #c4c4c4;border-radius:6px;padding:28px}
+.upcoming h2{font-size:21px;letter-spacing:-.5px;margin:10px 0}.upcoming p{font-size:13px;color:#999;line-height:1.6;margin:0;max-width:700px}
+.upcoming .eyebrow{letter-spacing:1px;color:#808080}.upcoming .square{background:var(--orange)}
+footer{background:var(--surface);padding:34px 0}footer .wrap{display:flex;justify-content:space-between;gap:25px;font-size:12px;line-height:1.6}footer p{margin:0;color:#808080}footer strong{color:var(--ink)}
+.dialog{border:0;padding:0;background:#000;color:#fff;border-radius:8px;width:min(420px,calc(100vw - 32px));max-height:92dvh}
+.dialog::backdrop{background:#000c}
+.dialog-head{padding:14px 18px;border-bottom:1px solid #333;display:flex;align-items:center;justify-content:space-between}
+.dialog-head h2{font-size:16px;margin:0}
+.dialog-close{width:40px;height:40px;border:1px solid #333;background:var(--surface);color:#fff;border-radius:4px;font-size:20px}
+.dialog video{display:block;width:100%;max-height:80dvh;background:#000}
+[hidden]{display:none!important}
+@media(max-width:850px){.wrap{width:calc(100% - 40px)}.hero{grid-template-columns:1fr 210px;gap:25px}}
+@media(max-width:640px){.wrap{width:calc(100% - 32px)}.topline{height:auto;padding:14px 0;flex-wrap:wrap}.toplinks .btn{font-size:11px;padding:9px 11px;min-height:38px}
+.hero{display:block;padding:32px 0 26px}.hero h1{font-size:52px;letter-spacing:-3px}.hero p{font-size:14px}
+.stats{margin-top:24px;display:flex;justify-content:space-between;padding:19px 19px 13px}.stats-line{display:block;padding:0 10px 0 0;border:0}.stats strong{font-size:28px;display:block}
+.search,.search input{width:100%;min-width:0}.grid{grid-template-columns:minmax(0,1fr)}footer .wrap{display:block}footer p+p{margin-top:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.navwrap{width:min(1240px,calc(100% - 80px));margin-inline:auto}
+.topline{min-height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #333;gap:12px;flex-wrap:wrap;padding:10px 0}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;font-size:24px;font-weight:900;letter-spacing:-1px;color:#fff;font-family:Arial,Helvetica,sans-serif}
+.brand-mark{display:grid;grid-template-columns:8px 8px;gap:3px}.brand-mark i{width:8px;height:8px;background:#111}.brand-mark i:first-child{background:#0A84FF}.brand-mark i:last-child{background:#FF3B30}
+.toplinks{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.toplinks .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid #fff;border-radius:4px;padding:11px 15px;background:#111;color:#fff;text-decoration:none;font:700 13px/1.25 Arial,Helvetica,sans-serif;min-height:41px;margin:0;width:auto}
+.toplinks .btn:hover{background:#333}
+.toplinks .btn[aria-current=page]{background:#fff;color:#000}
+.toplinks .btn.off{opacity:.45;cursor:default;border-style:dashed}
+.navnote{font:11px/1.5 Arial,Helvetica,sans-serif;color:#8a8a8a;margin:8px 0 0;text-align:right}
+.topline{height:auto!important}
+@media(max-width:640px){.navwrap{width:calc(100% - 32px)}.toplinks .btn{font-size:11px;padding:8px 10px;min-height:36px}}
+
+.btn[aria-current=page]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.off{opacity:.45;cursor:default;border-style:dashed}
+.navnote{font-size:11px;color:#8a8a8a;margin:8px 0 0;text-align:right}
+.badge.u{background:var(--red);color:#fff}.badge.a{background:var(--orange);color:#000}.badge.p{background:var(--blue);color:#fff}
+.badge.k{background:#fff;color:#000}
+.regua{margin:0 0 28px;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:6px}
+.regua h2{font-size:17px;margin:8px 0 10px;letter-spacing:-.3px}.regua ol{margin:0;padding-left:20px;color:#c7c7c7;font-size:13px;line-height:1.65}
+.regua p{font-size:12px;color:#8a8a8a;margin:10px 0 0;line-height:1.6}
+.orig{font-size:11px;color:#8a8a8a;margin:0;font-style:italic}
+.uso{font-size:12px;color:#fff;background:#2a0f0d;border:1px solid #5a1d18;border-radius:4px;padding:8px 10px;margin:0;line-height:1.5}
+.dados{font-size:12px;color:#c7c7c7;margin:0;line-height:1.6}.dados b{color:#fff}
+.sec{margin:34px 0 14px;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#8a8a8a;display:flex;gap:9px;align-items:center}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:7px;margin:14px 0 34px}table{border-collapse:collapse;width:100%;font-size:12px;font-variant-numeric:tabular-nums}
+th,td{padding:9px 10px;border-bottom:1px solid #222;text-align:left;vertical-align:top;white-space:nowrap}td:nth-child(2){white-space:normal;min-width:240px}
+thead th{position:sticky;top:0;background:#111;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#bbb}th.g{border-top:3px solid var(--orange)}th.n{border-top:3px solid var(--blue)}
+td.v{background:repeating-linear-gradient(45deg,#1a1300,#1a1300 6px,#241a00 6px,#241a00 12px)}td.b{font-weight:900;color:var(--green)}td.ad{font-weight:900}.mut{color:#8a8a8a;font-size:11px}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:#aaa;margin:10px 0}.legend span{display:inline-flex;align-items:center;gap:7px}.sw{width:22px;height:12px;display:inline-block}
+h2.sec{font-size:26px;letter-spacing:-1px;margin:36px 0 4px}.note{font-size:12px;color:#999;line-height:1.65;max-width:980px}</style></head><body>
+<header class="navwrap topline"><a class="brand" href="#topo"><span class="brand-mark"><i></i><i></i><i></i><i></i></span>Maya</a><nav class="toplinks" aria-label="Páginas"><a class="btn" href="../catalogo/">Criativos</a><a class="btn" href="HOOKS.html">Hooks</a><a class="btn" href="CORPOS.html">Corpos</a><a class="btn" href="FILA-MODELAGEM.html">Fila de modelagem</a><a class="btn" href="LISTA-CRIATIVOS.html">Criativos minerados</a><a class="btn" href="TRAFEGO.html" aria-current="page">Tráfego</a></nav></header>
+<main id="topo"><div class="wrap hero"><div><div class="eyebrow"><span class="square"></span> Magra Sem Caneta · campanha F002 · atualizado em 22/10/2026</div><h1>Tráfego dos<br><em>criativos.</em></h1>
+<p>Cada anúncio que rodou desde 03/10, ligado ao criativo do catálogo, com o caminho dentro do funil. Célula listrada = dado que só o Léo tem (gerenciador): pedir a ele.</p><div class="pendente-leo" style="margin:18px 0 0;padding:14px 16px;border:1px solid #6b4a00;border-left:4px solid #f5a524;background:#1a1300;border-radius:10px;color:#f1e6c8;font-size:14px;line-height:1.5"><b style="color:#f5a524">Pendente com o Léo · 22/10/2026</b><br>Gasto por anúncio (e por conjunto) para fechar o custo por venda dos criativos já usados e não validados: M15 a M20 e os anúncios com gancho HK (HK003, HK005, HK006, HK008, HK009, HK010, HK042, HK043, HK044, HK045). Sem esse número, nenhum deles tem CPA e a tabela fica incompleta.</div></div>
+<div class="stats"><div class="stats-line"><strong>54</strong><span>anúncios</span></div><div class="stats-line"><strong>123</strong><span>leads</span></div><div class="stats-line"><strong>12</strong><span>vendas</span></div></div></div>
+<section class="wrap">
+<div class="legend"><span><i class="sw" style="background:var(--orange)"></i>Gerenciador (relatórios do Léo)</span><span><i class="sw" style="background:var(--blue)"></i>Nosso funil (PostHog sem bot + banco)</span><span><i class="sw" style="background:repeating-linear-gradient(45deg,#1a1300,#1a1300 4px,#3a2a00 4px,#3a2a00 8px)"></i>Falta o dado do Léo</span></div>
+<h2 class="sec">Por criativo</h2><p class="note">Soma dos anúncios de cada criativo, ordenada por vendas. Gasto e CPA ficam em branco até o Léo mandar o gasto por anúncio.</p>
+<div class="tbl"><table><thead><tr><th>Criativo</th><th>Anúncios</th><th>Com tráfego</th><th class="g">Gasto</th><th class="n">Visitas</th><th class="n">Passou da capa</th><th class="n">Leads</th><th class="n">Checkout</th><th class="n">Vendas</th><th class="n">Lead → venda</th><th class="g">CPA</th></tr></thead><tbody><tr><td class="ad">M02</td><td class="mut">#5, #6, #28, #29, #30</td><td class="mut">03/10 a 15/10</td>
+<td class="v"></td><td>80</td><td>39<span class="mut"> 49%</span></td><td>19<span class="mut"> 24%</span></td><td>13</td><td class="b">4</td><td>21%</td><td class="v"></td></tr><tr><td class="ad">M10</td><td class="mut">#3, #4, #31, #32, #33</td><td class="mut">03/10 a 19/10</td>
+<td class="v"></td><td>68</td><td>31<span class="mut"> 46%</span></td><td>12<span class="mut"> 18%</span></td><td>9</td><td class="b">3</td><td>25%</td><td class="v"></td></tr><tr><td class="ad">M14</td><td class="mut">#34, #35, #36</td><td class="mut">14/10 a 17/10</td>
+<td class="v"></td><td>42</td><td>22<span class="mut"> 52%</span></td><td>19<span class="mut"> 45%</span></td><td>9</td><td class="b">2</td><td>11%</td><td class="v"></td></tr><tr><td class="ad">M03</td><td class="mut">#7, #8</td><td class="mut">03/10 a 04/10</td>
+<td class="v"></td><td>43</td><td>21<span class="mut"> 49%</span></td><td>9<span class="mut"> 21%</span></td><td>6</td><td class="b">1</td><td>11%</td><td class="v"></td></tr><tr><td class="ad">M11</td><td class="mut">#23</td><td class="mut">08/10 a 08/10</td>
+<td>R$ 62,58</td><td>10</td><td>3<span class="mut"> 30%</span></td><td>2<span class="mut"> 20%</span></td><td>1</td><td class="b">1</td><td>50%</td><td>R$ 62,58</td></tr><tr><td class="ad">M04</td><td class="mut">#9, #10</td><td class="mut">03/10 a 04/10</td>
+<td class="v"></td><td>33</td><td>16<span class="mut"> 48%</span></td><td>11<span class="mut"> 33%</span></td><td>10</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M05</td><td class="mut">#11</td><td class="mut">03/10 a 04/10</td>
+<td class="v"></td><td>21</td><td>15<span class="mut"> 71%</span></td><td>7<span class="mut"> 33%</span></td><td>4</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M19</td><td class="mut">#49, #50, #51</td><td class="mut">14/10 a 14/10</td>
+<td class="v"></td><td>12</td><td>8<span class="mut"> 67%</span></td><td>7<span class="mut"> 58%</span></td><td>3</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M20</td><td class="mut">#52, #53, #54</td><td class="mut">14/10 a 15/10</td>
+<td class="v"></td><td>22</td><td>9<span class="mut"> 41%</span></td><td>7<span class="mut"> 32%</span></td><td>4</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M15</td><td class="mut">#37, #38, #39</td><td class="mut">14/10 a 15/10</td>
+<td class="v"></td><td>19</td><td>8<span class="mut"> 42%</span></td><td>6<span class="mut"> 32%</span></td><td>4</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M08</td><td class="mut">#15, #16</td><td class="mut">03/10 a 04/10</td>
+<td class="v"></td><td>20</td><td>10<span class="mut"> 50%</span></td><td>5<span class="mut"> 25%</span></td><td>3</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">Léo</td><td class="mut">#19, #20, #21, #22</td><td class="mut">06/10 a 07/10</td>
+<td class="v"></td><td>11</td><td>9<span class="mut"> 82%</span></td><td>3<span class="mut"> 27%</span></td><td>3</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M13</td><td class="mut">#26, #27</td><td class="mut">07/10 a 08/10</td>
+<td>R$ 65,22</td><td>11</td><td>6<span class="mut"> 55%</span></td><td>3<span class="mut"> 27%</span></td><td>2</td><td class="b">0</td><td>0%</td><td class="mut">sem venda</td></tr><tr><td class="ad">M16</td><td class="mut">#40, #41, #42</td><td class="mut">14/10 a 14/10</td>
+<td class="v"></td><td>7</td><td>4<span class="mut"> 57%</span></td><td>3<span class="mut"> 43%</span></td><td>1</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M18</td><td class="mut">#46, #47, #48</td><td class="mut">14/10 a 15/10</td>
+<td class="v"></td><td>17</td><td>6<span class="mut"> 35%</span></td><td>3<span class="mut"> 18%</span></td><td>1</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M06</td><td class="mut">#12</td><td class="mut">03/10 a 04/10</td>
+<td class="v"></td><td>9</td><td>6<span class="mut"> 67%</span></td><td>2<span class="mut"> 22%</span></td><td>2</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M07</td><td class="mut">#13, #14</td><td class="mut">03/10 a 04/10</td>
+<td class="v"></td><td>20</td><td>4<span class="mut"> 20%</span></td><td>2<span class="mut"> 10%</span></td><td>1</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M01</td><td class="mut">#1, #2</td><td class="mut">03/10 a 04/10</td>
+<td class="v"></td><td>23</td><td>13<span class="mut"> 57%</span></td><td>1<span class="mut"> 4%</span></td><td>0</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M12</td><td class="mut">#24, #25</td><td class="mut">07/10 a 07/10</td>
+<td>R$ 61,61</td><td>5</td><td>1<span class="mut"> 20%</span></td><td>1<span class="mut"> 20%</span></td><td>1</td><td class="b">0</td><td>0%</td><td class="mut">sem venda</td></tr><tr><td class="ad">M17</td><td class="mut">#43, #44, #45</td><td class="mut">14/10 a 14/10</td>
+<td class="v"></td><td>11</td><td>2<span class="mut"> 18%</span></td><td>1<span class="mut"> 9%</span></td><td>0</td><td class="b">0</td><td>0%</td><td class="v"></td></tr><tr><td class="ad">M09</td><td class="mut">#17, #18</td><td class="mut">03/10 a 04/10</td>
+<td class="v"></td><td>6</td><td>1<span class="mut"> 17%</span></td><td>0<span class="mut"> 0%</span></td><td>0</td><td class="b">0</td><td></td><td class="v"></td></tr>
+<tr><td class="ad">Total</td><td></td><td></td><td class="v"></td><td>490</td><td></td><td>123</td><td>77</td><td class="b">11<span class="mut"> + 1 sem anúncio</span></td><td>9%</td><td class="v"></td></tr></tbody></table></div>
+<h2 class="sec">Por anúncio</h2><p class="note">Uma linha por anúncio e por quiz (curto /qc, longo /q). "Com tráfego" = do primeiro ao último acesso desse anúncio no nosso funil; os dias que ele ficou ativo no gerenciador são do Léo. Visitas = pessoas que abriram a capa do quiz.</p>
+<div class="tbl"><table><thead><tr><th>Anúncio</th><th>Criativo</th><th>Quiz</th><th>Conjunto subiu</th><th>Com tráfego no funil</th><th>Dias</th><th class="g">Dias ativo</th><th class="g">Gasto</th><th class="g">Impressões</th><th class="g">CPM</th><th class="g">Cliques</th><th class="g">CTR</th><th class="g">CPC</th><th class="n">Visitas</th><th class="n">Passou da capa</th><th class="n">Leads</th><th class="n">Viu o preço</th><th class="n">Checkout</th><th class="n">Vendas</th><th class="g">CPA</th><th class="n">Viu o upsell</th></tr></thead><tbody><tr data-m="M01" data-f="longo"><td class="ad">#1</td><td><b>M01 Dieta</b><div class="mut">[#1_cv1_cb1_vr0] [UGC] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 11:13 a 04/10 06:23</td><td>0,8</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>4</td><td>3<span class="mut"> 75%</span></td><td>1</td><td>1</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M01" data-f="curto"><td class="ad">#2</td><td><b>M01 Shot</b><div class="mut">⚠ M01 Shot: não dá para saber se é a voz 1 ou a voz 2</div><div class="mut">[#2_cv1_cb1_vr1] [UGC] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 08:50 a 03/10 21:02</td><td>0,5</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>8</td><td>4<span class="mut"> 50%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M01" data-f="longo"><td class="ad">#2</td><td><b>M01 Shot</b><div class="mut">⚠ M01 Shot: não dá para saber se é a voz 1 ou a voz 2</div><div class="mut">[#2_cv1_cb1_vr1] [UGC] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 07:58 a 04/10 07:11</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>11</td><td>6<span class="mut"> 55%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M10" data-f="curto"><td class="ad">#3</td><td><b>M10 Dieta</b><div class="mut">[#3_cv1_cb2_vr2] [React] [Novo Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 07:53 a 04/10 20:46</td><td>1,5</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>10</td><td>3<span class="mut"> 30%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M10" data-f="longo"><td class="ad">#3</td><td><b>M10 Dieta</b><div class="mut">[#3_cv1_cb2_vr2] [React] [Novo Hook] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 07:38 a 19/10 12:07</td><td>16,2</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>8</td><td>6<span class="mut"> 75%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M10" data-f="curto"><td class="ad">#4</td><td><b>M10 Shot</b><div class="mut">[#4_cv1_cb2_vr3] [React] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 08:39 a 14/10 11:35</td><td>11,1</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>32</td><td>14<span class="mut"> 44%</span></td><td>6</td><td>7</td><td>6</td><td class="b">3</td><td class="v"></td><td>2</td></tr><tr data-m="M10" data-f="longo"><td class="ad">#4</td><td><b>M10 Shot</b><div class="mut">[#4_cv1_cb2_vr3] [React] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 10:00 a 04/10 19:32</td><td>1,4</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>1</td><td>0<span class="mut"> 0%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M02" data-f="curto"><td class="ad">#5</td><td><b>M02 Dieta</b><div class="mut">[#5_cv2_cb1_vr0] [UGC] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 07:57 a 14/10 09:05</td><td>11,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>29</td><td>12<span class="mut"> 41%</span></td><td>7</td><td>7</td><td>7</td><td class="b">3</td><td class="v"></td><td>2</td></tr><tr data-m="M02" data-f="longo"><td class="ad">#5</td><td><b>M02 Dieta</b><div class="mut">[#5_cv2_cb1_vr0] [UGC] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 07:52 a 04/10 08:10</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>11</td><td>5<span class="mut"> 45%</span></td><td>4</td><td>4</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M02" data-f="curto"><td class="ad">#6</td><td><b>M02 Shot</b><div class="mut">[#6_cv2_cb1_vr1] [UGC] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 10:07 a 04/10 04:21</td><td>0,8</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>3</td><td>3<span class="mut"> 100%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M02" data-f="longo"><td class="ad">#6</td><td><b>M02 Shot</b><div class="mut">[#6_cv2_cb1_vr1] [UGC] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 07:31 a 04/10 04:17</td><td>0,9</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>10</td><td>3<span class="mut"> 30%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M03" data-f="curto"><td class="ad">#7</td><td><b>M03 Dieta</b><div class="mut">[#7_cv3_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 07:18 a 04/10 07:12</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>16</td><td>8<span class="mut"> 50%</span></td><td>3</td><td>3</td><td>3</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M03" data-f="longo"><td class="ad">#7</td><td><b>M03 Dieta</b><div class="mut">[#7_cv3_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 07:23 a 04/10 06:38</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>9</td><td>5<span class="mut"> 56%</span></td><td>2</td><td>2</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M03" data-f="curto"><td class="ad">#8</td><td><b>M03 Shot</b><div class="mut">[#8_cv3_cb1_vr1] [Frente Camera] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 07:33 a 04/10 06:24</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>9</td><td>2<span class="mut"> 22%</span></td><td>2</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M03" data-f="longo"><td class="ad">#8</td><td><b>M03 Shot</b><div class="mut">[#8_cv3_cb1_vr1] [Frente Camera] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 07:41 a 04/10 18:00</td><td>1,4</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>9</td><td>6<span class="mut"> 67%</span></td><td>2</td><td>2</td><td>1</td><td class="b">1</td><td class="v"></td><td>0</td></tr><tr data-m="M04" data-f="curto"><td class="ad">#9</td><td><b>M04 Dieta</b><div class="mut">[#9_cv4_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 08:22 a 04/10 18:24</td><td>1,4</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>10</td><td>5<span class="mut"> 50%</span></td><td>4</td><td>4</td><td>4</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M04" data-f="longo"><td class="ad">#9</td><td><b>M04 Dieta</b><div class="mut">[#9_cv4_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 07:33 a 04/10 06:41</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>10</td><td>5<span class="mut"> 50%</span></td><td>3</td><td>3</td><td>3</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M04" data-f="curto"><td class="ad">#10</td><td><b>M04 Shot</b><div class="mut">[#10_cv4_cb1_vr1] [Frente Camera] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 07:57 a 04/10 02:03</td><td>0,8</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>3</td><td>3<span class="mut"> 100%</span></td><td>3</td><td>2</td><td>2</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M04" data-f="longo"><td class="ad">#10</td><td><b>M04 Shot</b><div class="mut">[#10_cv4_cb1_vr1] [Frente Camera] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 07:50 a 04/10 04:31</td><td>0,9</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>10</td><td>3<span class="mut"> 30%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M05" data-f="curto"><td class="ad">#11</td><td><b>M05</b><div class="mut">[#11_cv5_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 07:31 a 04/10 07:00</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>11</td><td>8<span class="mut"> 73%</span></td><td>5</td><td>5</td><td>3</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M05" data-f="longo"><td class="ad">#11</td><td><b>M05</b><div class="mut">[#11_cv5_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 08:00 a 04/10 07:16</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>10</td><td>7<span class="mut"> 70%</span></td><td>2</td><td>2</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M06" data-f="curto"><td class="ad">#12</td><td><b>M06</b><div class="mut">[#12_cv6_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 07:53 a 04/10 05:32</td><td>0,9</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>5</td><td>3<span class="mut"> 60%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M06" data-f="longo"><td class="ad">#12</td><td><b>M06</b><div class="mut">[#12_cv6_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 15:08 a 04/10 05:13</td><td>0,6</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>4</td><td>3<span class="mut"> 75%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M07" data-f="curto"><td class="ad">#13</td><td><b>M07 Dieta</b><div class="mut">[#13_cv7_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 10:33 a 04/10 03:46</td><td>0,7</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>4</td><td>1<span class="mut"> 25%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M07" data-f="longo"><td class="ad">#13</td><td><b>M07 Dieta</b><div class="mut">[#13_cv7_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 07:23 a 04/10 07:33</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>7</td><td>3<span class="mut"> 43%</span></td><td>1</td><td>1</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M07" data-f="curto"><td class="ad">#14</td><td><b>M07 Shot</b><div class="mut">[#14_cv7_cb1_vr1] [Frente Camera] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 07:25 a 03/10 19:06</td><td>0,5</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>6</td><td>0<span class="mut"> 0%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M07" data-f="longo"><td class="ad">#14</td><td><b>M07 Shot</b><div class="mut">[#14_cv7_cb1_vr1] [Frente Camera] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 09:54 a 04/10 03:43</td><td>0,7</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>3</td><td>0<span class="mut"> 0%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M08" data-f="curto"><td class="ad">#15</td><td><b>M08 Dieta</b><div class="mut">[#15_cv8_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 07:36 a 04/10 06:49</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>5</td><td>2<span class="mut"> 40%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M08" data-f="longo"><td class="ad">#15</td><td><b>M08 Dieta</b><div class="mut">[#15_cv8_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 09:34 a 04/10 06:25</td><td>0,9</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>5</td><td>2<span class="mut"> 40%</span></td><td>2</td><td>2</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M08" data-f="curto"><td class="ad">#16</td><td><b>M08 Shot</b><div class="mut">⚠ M08 Shot por exclusão (o par #15 é o Dieta)</div><div class="mut">[#16_cv8_cb1_vr1] [Frente Camera] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 07:30 a 04/10 04:59</td><td>0,9</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>4</td><td>4<span class="mut"> 100%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M08" data-f="longo"><td class="ad">#16</td><td><b>M08 Shot</b><div class="mut">⚠ M08 Shot por exclusão (o par #15 é o Dieta)</div><div class="mut">[#16_cv8_cb1_vr1] [Frente Camera] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>03/10/26</td><td class="mut">03/10 06:53 a 04/10 06:51</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>6</td><td>2<span class="mut"> 33%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M09" data-f="curto"><td class="ad">#17</td><td><b>M09 Dieta</b><div class="mut">[#17_cv9_cb1_vr0] [UGC] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>03/10/26</td><td class="mut">03/10 09:45 a 04/10 04:24</td><td>0,8</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>6</td><td>1<span class="mut"> 17%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M09" data-f="curto"><td class="ad">#18</td><td><b>M09 Shot</b><div class="mut">[#18_cv9_cb1_vr1] [UGC] [Adaptar Copy] [FNI #002] [Meta]</div></td>
+<td>curto</td><td></td><td class="mut"></td><td></td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>0</td><td>0<span class="mut"> </span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="Léo" data-f="curto"><td class="ad">#19</td><td><b>M01 Shot com gancho do M04 (&quot;posso começar pela fruta?&quot;)</b><div class="mut">[#19_cv1_cb3_vr4] [Frente Camera] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td></td><td class="mut"></td><td></td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>0</td><td>0<span class="mut"> </span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="Léo" data-f="curto"><td class="ad">#20</td><td><b>M01 Shot com gancho do M07 (&quot;Elas não iam pra academia?&quot;)</b><div class="mut">[#20_cv1_cb4_vr5] [Frente Camera] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td></td><td class="mut"></td><td></td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>0</td><td>0<span class="mut"> </span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="Léo" data-f="curto"><td class="ad">#21</td><td><b>M02 Dieta com gancho do M04 (&quot;posso começar pela fruta?&quot;)</b><div class="mut">[#21_cv2_cb2_vr2] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>06/10/26</td><td class="mut">06/10 08:22 a 06/10 10:24</td><td>0,1</td>
+<td class="v"></td><td>R$ 31,87</td><td>64</td><td>R$ 497,97</td><td>10</td><td>16%</td><td>R$ 3,19</td>
+<td>8</td><td>6<span class="mut"> 75%</span></td><td>2</td><td>2</td><td>2</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="Léo" data-f="curto"><td class="ad">#22</td><td><b>M02 Dieta com gancho do M07 (&quot;Elas não iam pra academia?&quot;)</b><div class="mut">[#22_cv2_cb3_vr3] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>06/10/26</td><td class="mut">06/10 14:42 a 07/10 06:01</td><td>0,6</td>
+<td class="v"></td><td>R$ 29,67</td><td>187</td><td>R$ 158,66</td><td>6</td><td>3%</td><td>R$ 4,95</td>
+<td>3</td><td>3<span class="mut"> 100%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M11" data-f="curto"><td class="ad">#23</td><td><b>M11 (creator real)</b><div class="mut">[#23_cv1_cb5_vr6] [React] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>07/10/26</td><td class="mut">08/10 00:23 a 08/10 14:19</td><td>0,6</td>
+<td class="v"></td><td>R$ 62,58</td><td>227</td><td>R$ 275,68</td><td>10</td><td>4%</td><td>R$ 6,26</td>
+<td>10</td><td>3<span class="mut"> 30%</span></td><td>2</td><td>2</td><td>1</td><td class="b">1</td><td>R$ 62,58</td><td>1</td></tr><tr data-m="M12" data-f="curto"><td class="ad">#24</td><td><b>M12 A (roteiro completo)</b><div class="mut">[#24_cv1_cb6_vr7] [React] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>07/10/26</td><td class="mut">07/10 07:10 a 07/10 07:10</td><td>0,0</td>
+<td class="v"></td><td>R$ 32,22</td><td>85</td><td>R$ 379,06</td><td>1</td><td>1%</td><td>R$ 32,22</td>
+<td>1</td><td>0<span class="mut"> 0%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M12" data-f="curto"><td class="ad">#25</td><td><b>M12 B (roteiro curto)</b><div class="mut">[#25_cv1_cb6_vr8] [React] [Variação Estrutura] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>07/10/26</td><td class="mut">07/10 09:17 a 07/10 16:47</td><td>0,3</td>
+<td class="v"></td><td>R$ 29,39</td><td>164</td><td>R$ 179,21</td><td>5</td><td>3%</td><td>R$ 5,88</td>
+<td>4</td><td>1<span class="mut"> 25%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M13" data-f="curto"><td class="ad">#26</td><td><b>M13 dentro do corpo</b><div class="mut">[#26_cv2_cb4_vr4] [Frente Camera] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>07/10/26</td><td class="mut">07/10 14:13 a 08/10 05:44</td><td>0,6</td>
+<td class="v"></td><td>R$ 31,34</td><td>129</td><td>R$ 242,95</td><td>6</td><td>5%</td><td>R$ 5,22</td>
+<td>5</td><td>1<span class="mut"> 20%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M13" data-f="curto"><td class="ad">#27</td><td><b>M13 silhueta</b><div class="mut">[#27_cv2_cb4_vr5] [Frente Camera] [Variação Vídeo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>07/10/26</td><td class="mut">07/10 07:36 a 07/10 09:31</td><td>0,1</td>
+<td class="v"></td><td>R$ 33,88</td><td>81</td><td>R$ 418,27</td><td>8</td><td>10%</td><td>R$ 4,24</td>
+<td>6</td><td>5<span class="mut"> 83%</span></td><td>2</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M02" data-f="curto"><td class="ad">#28</td><td><b>M02-D1 &quot;Coma menos e se mexa mais&quot;</b><div class="mut">[#28_cv2_cb5_vr6] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 11:21 a 14/10 15:55</td><td>0,2</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>3</td><td>2<span class="mut"> 67%</span></td><td>2</td><td>2</td><td>2</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M02" data-f="curto"><td class="ad">#29</td><td><b>M02-D2 &quot;Ozempic. Mounjaro. Caneta.&quot;</b><div class="mut">[#29_cv2_cb6_vr7] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">15/10 06:00 a 15/10 06:26</td><td>0,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>2</td><td>2<span class="mut"> 100%</span></td><td>2</td><td>2</td><td>2</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M02" data-f="curto"><td class="ad">#30</td><td><b>M02-D3 &quot;Qual é o primeiro alimento&quot;</b><div class="mut">[#30_cv2_cb7_vr8] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 12:43 a 14/10 23:11</td><td>0,4</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>22</td><td>12<span class="mut"> 55%</span></td><td>4</td><td>4</td><td>1</td><td class="b">1</td><td class="v"></td><td>0</td></tr><tr data-m="M10" data-f="curto"><td class="ad">#31</td><td><b>M10-S1 &quot;Beba essa mistura estranha&quot;</b><div class="mut">[#31_cv1_cb7_vr9] [React] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 06:38 a 14/10 18:14</td><td>0,5</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>6</td><td>4<span class="mut"> 67%</span></td><td>3</td><td>3</td><td>3</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M10" data-f="curto"><td class="ad">#32</td><td><b>M10-S2 &quot;Vinagre de maçã e um limão&quot;</b><div class="mut">[#32_cv1_cb8_vr10] [React] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 16:11 a 15/10 08:54</td><td>0,7</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>7</td><td>3<span class="mut"> 43%</span></td><td>3</td><td>3</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M10" data-f="curto"><td class="ad">#33</td><td><b>M10-S3 &quot;Não tome muito&quot;</b><div class="mut">[#33_cv1_cb9_vr11] [React] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 16:58 a 14/10 21:04</td><td>0,2</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>4</td><td>1<span class="mut"> 25%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M10" data-f="longo"><td class="ad">#33</td><td><b>M10-S3 &quot;Não tome muito&quot;</b><div class="mut">[#33_cv1_cb9_vr11] [React] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>14/10/26</td><td class="mut">14/10 18:50 a 14/10 18:50</td><td>0,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>0</td><td>0<span class="mut"> </span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M14" data-f="curto"><td class="ad">#34</td><td><b>M14 A &quot;Eu como metade do que você come&quot;</b><div class="mut">[#34_cv10_cb1_vr0] [Animação 3D] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 06:26 a 15/10 00:20</td><td>0,7</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>18</td><td>8<span class="mut"> 44%</span></td><td>7</td><td>7</td><td>3</td><td class="b">1</td><td class="v"></td><td>1</td></tr><tr data-m="M14" data-f="curto"><td class="ad">#35</td><td><b>M14 B &quot;Mãe, por que você nunca aparece nas fotos?&quot;</b><div class="mut">[#35_cv10_cb2_vr1] [Animação 3D] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">15/10 05:52 a 15/10 16:26</td><td>0,4</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>8</td><td>5<span class="mut"> 62%</span></td><td>5</td><td>5</td><td>3</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M14" data-f="curto"><td class="ad">#36</td><td><b>M14 C &quot;Sandra, o que você fez?&quot;</b><div class="mut">[#36_cv10_cb3_vr2] [Animação 3D] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">15/10 06:03 a 17/10 16:20</td><td>2,4</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>16</td><td>9<span class="mut"> 56%</span></td><td>7</td><td>7</td><td>3</td><td class="b">1</td><td class="v"></td><td>0</td></tr><tr data-m="M15" data-f="curto"><td class="ad">#37</td><td><b>M15-A &quot;A gordura da barriga não dói&quot;</b><div class="mut">[#37_cv11_cb1_vr0] [UGC] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">15/10 06:15 a 15/10 07:07</td><td>0,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>2</td><td>2<span class="mut"> 100%</span></td><td>2</td><td>2</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M15" data-f="curto"><td class="ad">#38</td><td><b>M15-B &quot;Gente, eu eliminei&quot;</b><div class="mut">[#38_cv11_cb2_vr1] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 06:48 a 14/10 22:14</td><td>0,6</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>5</td><td>3<span class="mut"> 60%</span></td><td>3</td><td>3</td><td>3</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M15" data-f="curto"><td class="ad">#39</td><td><b>M15-C &quot;Coma isso à noite&quot;</b><div class="mut">[#39_cv11_cb3_vr2] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 07:25 a 14/10 15:15</td><td>0,3</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>12</td><td>3<span class="mut"> 25%</span></td><td>1</td><td>1</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M15" data-f="longo"><td class="ad">#39</td><td><b>M15-C &quot;Coma isso à noite&quot;</b><div class="mut">[#39_cv11_cb3_vr2] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>14/10/26</td><td class="mut">14/10 07:58 a 14/10 07:58</td><td>0,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>0</td><td>0<span class="mut"> </span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M16" data-f="curto"><td class="ad">#40</td><td><b>M16-A &quot;A gordura da barriga não dói&quot;</b><div class="mut">[#40_cv12_cb1_vr0] [UGC] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td></td><td class="mut"></td><td></td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>0</td><td>0<span class="mut"> </span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M16" data-f="curto"><td class="ad">#41</td><td><b>M16-B &quot;Gente, eu eliminei&quot;</b><div class="mut">[#41_cv12_cb2_vr1] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td></td><td class="mut"></td><td></td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>0</td><td>0<span class="mut"> </span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M16" data-f="curto"><td class="ad">#42</td><td><b>M16-C &quot;Coma isso à noite&quot;</b><div class="mut">[#42_cv12_cb3_vr2] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 06:22 a 14/10 09:28</td><td>0,1</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>7</td><td>4<span class="mut"> 57%</span></td><td>3</td><td>3</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M17" data-f="curto"><td class="ad">#43</td><td><b>M17-A &quot;A gordura da barriga não dói&quot;</b><div class="mut">[#43_cv13_cb1_vr0] [UGC] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 11:20 a 14/10 15:50</td><td>0,2</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>6</td><td>1<span class="mut"> 17%</span></td><td>1</td><td>1</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M17" data-f="curto"><td class="ad">#44</td><td><b>M17-B &quot;Gente, eu eliminei&quot;</b><div class="mut">[#44_cv13_cb2_vr1] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td></td><td class="mut"></td><td></td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>0</td><td>0<span class="mut"> </span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M17" data-f="curto"><td class="ad">#45</td><td><b>M17-C &quot;Coma isso à noite&quot;</b><div class="mut">[#45_cv13_cb3_vr2] [UGC] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 06:05 a 14/10 08:02</td><td>0,1</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>5</td><td>1<span class="mut"> 20%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M18" data-f="curto"><td class="ad">#46</td><td><b>M18-A &quot;As pessoas usam errado o vinagre&quot;</b><div class="mut">[#46_cv14_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 06:49 a 15/10 07:57</td><td>1,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>10</td><td>2<span class="mut"> 20%</span></td><td>1</td><td>1</td><td>1</td><td class="b">0</td><td class="v"></td><td>1</td></tr><tr data-m="M18" data-f="curto"><td class="ad">#47</td><td><b>M18-B &quot;Faça essa caneta natural&quot;</b><div class="mut">[#47_cv14_cb2_vr1] [Frente Camera] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 13:07 a 15/10 10:42</td><td>0,9</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>6</td><td>4<span class="mut"> 67%</span></td><td>2</td><td>2</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M18" data-f="curto"><td class="ad">#48</td><td><b>M18-C &quot;Mais de 50 anos&quot;</b><div class="mut">[#48_cv14_cb3_vr2] [Frente Camera] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 18:55 a 14/10 18:55</td><td>0,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>1</td><td>0<span class="mut"> 0%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M19" data-f="curto"><td class="ad">#49</td><td><b>M19-A &quot;As pessoas usam errado o vinagre&quot; (tela dividida)</b><div class="mut">[#49_cv15_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 16:28 a 14/10 20:49</td><td>0,2</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>5</td><td>3<span class="mut"> 60%</span></td><td>3</td><td>2</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M19" data-f="longo"><td class="ad">#49</td><td><b>M19-A &quot;As pessoas usam errado o vinagre&quot; (tela dividida)</b><div class="mut">[#49_cv15_cb1_vr0] [Frente Camera] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>longo</td><td>14/10/26</td><td class="mut">14/10 16:51 a 14/10 16:51</td><td>0,0</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>0</td><td>0<span class="mut"> </span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M19" data-f="curto"><td class="ad">#50</td><td><b>M19-B &quot;Faça essa caneta natural&quot; (tela dividida)</b><div class="mut">[#50_cv15_cb2_vr1] [Frente Camera] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 07:10 a 14/10 13:31</td><td>0,3</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>4</td><td>3<span class="mut"> 75%</span></td><td>2</td><td>2</td><td>1</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M19" data-f="curto"><td class="ad">#51</td><td><b>M19-C &quot;Mais de 50 anos&quot; (tela dividida)</b><div class="mut">[#51_cv15_cb3_vr2] [Frente Camera] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 09:38 a 14/10 11:37</td><td>0,1</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>3</td><td>2<span class="mut"> 67%</span></td><td>2</td><td>2</td><td>2</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M20" data-f="curto"><td class="ad">#52</td><td><b>M20-A &quot;É isso que acontece&quot;</b><div class="mut">[#52_cv16_cb1_vr0] [Animação 3D] [Criativo Novo] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 20:32 a 15/10 07:13</td><td>0,4</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>10</td><td>5<span class="mut"> 50%</span></td><td>4</td><td>4</td><td>2</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M20" data-f="curto"><td class="ad">#53</td><td><b>M20-B &quot;Se você convive com vontade de doce&quot;</b><div class="mut">[#53_cv16_cb2_vr1] [Animação 3D] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 06:08 a 14/10 10:08</td><td>0,2</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>6</td><td>3<span class="mut"> 50%</span></td><td>3</td><td>3</td><td>2</td><td class="b">0</td><td class="v"></td><td>0</td></tr><tr data-m="M20" data-f="curto"><td class="ad">#54</td><td><b>M20-C &quot;O maior erro&quot;</b><div class="mut">[#54_cv16_cb3_vr2] [Animação 3D] [Mudança Hook] [FNI #002] [Meta]</div></td>
+<td>curto</td><td>14/10/26</td><td class="mut">14/10 13:01 a 14/10 20:49</td><td>0,3</td>
+<td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td><td class="v"></td>
+<td>6</td><td>1<span class="mut"> 17%</span></td><td>0</td><td>0</td><td>0</td><td class="b">0</td><td class="v"></td><td>0</td></tr></tbody></table></div>
+<h2 class="sec">O que já se sabe e de onde veio</h2><div class="note">
+<p><b>Gerenciador:</b> só os anúncios 21 a 27 têm número por anúncio (export do Léo de 03 a 08/10, conta CA01 · BMANA · Sofia). Do deck do F002 (03 a 07/10) temos só o total: R$ 1.144,73 gastos e 316 cliques (R$ 609,52 no quiz curto e R$ 535,21 no longo). Dos anúncios novos que subiram em 14/10 (#28 a #54) ainda não há nenhum relatório.</p>
+<p><b>Vendas:</b> 12 do protocolo de R$ 37 desde 03/10, ligadas ao anúncio pelo e-mail do lead. 1 sem anúncio identificado (2026-10-14 14:06): a compradora não passou pelo quiz com o nome do anúncio na URL. Nenhuma venda do upsell anual até hoje.</p>
+<p><b>Mapa anúncio → criativo:</b> conferido nos 54 vídeos da pasta do Drive do Léo pela fala do começo e pela duração; nos pares Shot/Dieta pela palavra do mecanismo; M18 e M19 pela tela dividida. Os anúncios 19 a 22 são montagens do Léo (corpo nosso com gancho de outro criativo), fora do catálogo.</p>
+<p><b>Pedir ao Léo, por anúncio e desde o início:</b> gasto, impressões, cliques no link, dias ativo e a data em que cada um foi pausado. Com isso a tabela fecha CPM, CTR, CPC e CPA de todos.</p></div></section></main>
+<footer><div class="wrap"><p><strong>Montado por</strong> arma/analises/trafego-msc/montar-trafego.py (dados em dados.json).</p><p>Atualizado em 22/10/2026.</p></div></footer></body></html>
